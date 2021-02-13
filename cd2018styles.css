@@ -1,0 +1,173 @@
+/* CSS Mini Reset Start */
+
+html, body, div, form, fieldset, legend, label{
+padding: 0;
+margin: 0;
+}
+
+table{
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+th, td{
+text-align: left;
+vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, th, td, caption{
+font-weight:normal;
+}
+
+img{
+border: 0;
+display: block;
+}
+
+/* CSS Mini Reset End */
+
+@font-face{
+font-family: 'gothic';
+src: url('./fonts/gothic.eot');
+src: local('gothic'), url('./fonts/gothic.woff') format('woff'), url('./fonts/gothic.ttf') format('truetype');
+}
+
+.gothicfont{
+font-family: 'gothic';
+}
+
+body{
+font-family: verdana, arial, sans-serif;
+font-size: 14px;
+width: 75%; /* width of whole website - % or browser width or fixed pixel width */
+min-width: 800px;
+background: #e3f1e1; /* For browsers that do not support gradients */
+background: linear-gradient(150deg, #eeeeee, #d9f4d4, #eeeeee); /* Standard syntax (must be last) */
+background-attachment: fixed;
+margin: auto;
+border: solid 1px #0e5300;
+border-width: 0 1px;
+}
+
+#header {
+height: 150px;
+line-height: 145px;
+border: 0;
+padding: 0 50px 0 50px;
+font-family: gothic;
+font-size: 42px;
+color: white;
+background: #0c4a00; /* For browsers that do not support gradients */
+background: linear-gradient(150deg, #0a3700, #246019); /* Standard syntax (must be last) */
+}
+
+a:link{color: #0c4a00;}
+a:visited{color: #0c4a00;}
+a:active{color: #0c4a00;}
+a:hover{color: #777777; text-decoration: none;}
+
+.links {
+background-color: white;
+background-image: url(images/linkbg_nocut.png);
+background-repeat: no-repeat;
+font-family: "Century Gothic", Calibri, sans-serif;
+width: 200px;
+min-height: 600px; 
+height: calc(100% - (150px + 60px)); 
+float: left;
+text-align: right;
+color: #0c4a00;
+font-size: 18px;
+line-height: 28px;
+padding: 10px;
+overflow: auto;
+display: block;
+}
+
+.links a{
+text-decoration: none;
+}
+
+.picright{
+margin: 10px;
+float: right;
+}
+
+.picleft{
+margin: 10px;
+float: left;
+}
+
+button{
+width: 560px;
+}
+
+.content{
+width: 560px;
+}
+
+#content{
+min-height: 620px;
+padding: 0 10px;
+margin-left: 220px;
+border-left: solid 1px #0c4a00;
+overflow: hidden;
+}
+
+#content p{
+margin-left: 10px;
+}
+
+h1{
+font-family: gothic;
+font-weight: normal;
+font-size: 28px;
+color: #0e5300;
+margin-left: 20px;
+}
+
+h4{
+color: #0e5300;
+padding-top: 20px;
+margin-left: 20px;
+font-weight: bold;
+}
+
+table{
+border: solid 1px #0e5300;
+min-width: 560px;
+width: 90%;
+}
+
+tr:nth-child(odd){
+background-color: #eeeeee;
+}
+
+th{
+font-weight: bold;
+padding: 4px;
+border-top: solid 1px #0c4a00;
+}
+
+td{
+padding: 4px;
+width: 50%;
+}
+
+.perf td, th{
+width: auto;
+}
+
+.date{
+background: linear-gradient(150deg, #0a3700, #246019);
+color: white;
+}
+
+#footer {
+height: 60px;
+line-height: 60px;
+text-align: center;
+color: white;
+background: #0c4a00;
+background: linear-gradient(150deg, #0a3700, #246019);
+}

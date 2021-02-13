@@ -1,0 +1,2267 @@
+
+--------------------------------------------------
+
+CSE HTML Validator Standard v17.05 (Registered)
+Checking "C:\Users\Dan\Dropbox\Website Stuff\Chris Dumigan\CD2018\cdshop.html" (63015 characters).
+File date is 09 September 2019 at 15:05:14.
+File checked on 11 February 2021 at 11:34:56.
+
+     Number of lines checked: 200 in 0.00 seconds
+ Number of lines in document: 1346 (14.9% of lines checked)
+     Number of lines ignored: 41
+Number of character entities: 1
+        Number of start tags: 115
+          Number of end tags: 77 (67.0% of start tags with end tags)
+Number of <% ... %> sections: 0
+     Number of HTML comments: 1
+
+Number of validator comments: 15
+          Number of messages: 32
+            Number of errors: 21 (first in line 97)
+          Number of warnings: 5
+
+--------------------------------------------------
+
+[CSE] Warning number 1:
+It is recommended that this document be updated to HTML5.
+HTML5 includes new features that can be used to improve
+mobile websites.
+
+[CSE] Warning number 2:
+Possibly misspelled words (6, 2 unique): Suncatcher (2x),
+Dumigan (4x). NOTE: Validation terminated so not all words
+were checked. 104 total words checked (0 in comments).
+
+[CSE] Message number 1:
+This document's title is 42 characters long. Consider adding
+a <meta name="apple-mobile-web-app-title" content="(13
+character short title)"> tag to the head section. This
+shorter title will be used when an iOS user adds the page to
+their Home Screen, otherwise the page title will be used and
+will be chopped off after the 13th character. The title is:
+"Chris Dumigan Musical Services - CD's Shop".
+
+   1: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+   2: <html lang="en">
+   3: <head>
+
+   4:  <meta charset="utf-8">
+-------------|||||||
+
+[CSE] Warning number 3 in line 4:8:
+[129] The HTML5 "charset" attribute for "meta" was used but
+this does not appear to be an HTML5 document. Perhaps the
+document type should be changed to HTML5? This message is
+displayed only once.
+
+   5:  <title>Chris Dumigan Musical Services - CD's Shop</title>
+--------|||||
+
+[CSE] Message number 2 in line 5:3:
+Tip - A good title is important for search engine listings.
+Try to use keywords and search terms in the title but keep
+it readable and not too long. Don't just stuff keywords in
+the title. The first words in the title are more likely to
+result in higher rankings than subsequent words, so use
+important keywords at the very beginning when reasonable.
+The title should also be something that a user will want to
+click on when it's listed on a search results page. A good
+title is also important when a visitor bookmarks a page.
+Example: <title>Download CSE HTML Validator - Powerful HTML
+and Link Checking Software for Windows</title>. We recommend
+that the "title" tag be one of the first tags inside the
+"head" section (but after any meta charset or viewport
+tags).
+
+   6: <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   7: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-------||||||
+
+[CSE] Warning number 4 in line 7:2:
+Missing "type" attribute. Documents below HTML5 require the
+"type" attribute for the "script" element in order to
+specify the scripting language. For example, use
+type="text/javascript" for JavaScript. However, in practice,
+it is more important that the external script document be
+served with the proper Internet media type (MIME type), and
+in this case the "type" attribute is not important.
+
+   7: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-------||||||
+
+[CSE] Message number 3 in line 7:2:
+If possible, avoid placing scripts (especially longer ones
+and ones without the "defer" attribute) in the head section.
+Doing this can make the page seem slower to load because the
+browser must pause to download (if using the "src"
+attribute) and run the script. Also, DOM content is not
+loaded yet so it is not available to the script. In most
+cases it's best to place scripts immediately before the
+</body> end tag. The "defer" attribute can also be used to
+fetch the script in parallel and evaluate it when the page
+has finished parsing. This message is displayed only once.
+
+   7: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-------||||||
+
+[CSE] Message number 4 in line 7:2:
+The "type" attribute was not used so this script is assumed
+to be of type "text/javascript" (the default). This message
+is displayed up to 3 times.
+
+   7: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+-------------------||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+[CSE] Message number 5 in line 7:14:
+jQuery may be rather hefty for some mobile devices. Consider
+avoiding the use of jQuery if possible, or at least use a
+lightweight or mobile optimized library to reduce heft as
+much as possible.
+
+   8: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-------||||||
+
+[CSE] Warning number 5 in line 8:2:
+Missing "type" attribute. Documents below HTML5 require the
+"type" attribute for the "script" element in order to
+specify the scripting language. For example, use
+type="text/javascript" for JavaScript. However, in practice,
+it is more important that the external script document be
+served with the proper Internet media type (MIME type), and
+in this case the "type" attribute is not important.
+
+   8: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-------||||||
+
+[CSE] Message number 6 in line 8:2:
+The "type" attribute was not used so this script is assumed
+to be of type "text/javascript" (the default). This message
+is displayed up to 3 times.
+
+   9:  <link rel="stylesheet" type="text/css" href="cd2018styles.css">
+  10:  <link rel="stylesheet" type="text/css" href="cdpopupstyles.css">
+  11: 
+  12: <style type="text/css">
+  13: figure img{
+  14: width: 210px;
+  15: height: 210px;
+  16: }
+  17: 
+
+  18: .popup img{
+------||||||
+
+[CSE] Message number 7 in line 18:1:
+It's recommended that "*.popup" be used instead of ".popup"
+so that the universal selector (*) is explicit instead of
+implied. Using explicit universal selectors can decrease
+confusion and improve readability. This message is displayed
+up to 3 times.
+
+  19: height: 250px;
+  20: }
+  21: 
+
+  22: .info p, ol{
+------|||||
+
+[CSE] Message number 8 in line 22:1:
+It's recommended that "*.info" be used instead of ".info" so
+that the universal selector (*) is explicit instead of
+implied. Using explicit universal selectors can decrease
+confusion and improve readability. This message is displayed
+up to 3 times.
+
+  23: margin-left: 310px;
+  24: }
+  25: 
+
+  26: .price, .code, .chris{
+------||||||
+
+[CSE] Message number 9 in line 26:1:
+It's recommended that "*.price" be used instead of ".price"
+so that the universal selector (*) is explicit instead of
+implied. Using explicit universal selectors can decrease
+confusion and improve readability. This message is displayed
+up to 3 times.
+
+  27: margin: 10px 20px;
+  28: }
+  29: 
+  30: table{
+  31: border: 0;
+  32: border-top: solid 1px #0c4a00;
+  33: border-bottom: solid 1px #0c4a00;
+  34: min-width: 0;
+  35: width: 300px;
+  36: margin-left: 300px;
+  37: }
+  38: 
+  39: tr:nth-child(odd){
+  40: background-color: white;
+  41: }
+  42: 
+  43: th{
+  44: font-weight: bold;
+  45: padding: 4px;
+  46: }
+  47: 
+  48: td{
+  49: padding: 4px;
+  50: width: 50%;
+  51: }
+  52: 
+  53: </style>
+  54:  
+  55: </head>
+  56: 
+  57: <body>
+  58: 
+
+  59: <div style="background-color: white;">
+-----------|||||
+
+[CSE] Message number 10 in line 59:6:
+The "style" attribute was used but a default style sheet
+language has not been defined (note that HTML Validator
+would not see this declaration if it is sent as an HTTP
+header by a web server). HTML 4.01 and XHTML (but not HTML5)
+require this. However, for all practical purposes, leaving
+it out is unlikely to cause problems unless the default
+"text/css" is incorrect. If you still want to define a
+default style sheet language, then include this in the
+"head" section of your document to specify "text/css" as the
+default style sheet language: <meta
+http-equiv="Content-Style-Type" content="text/css">. If
+you're using HTML Validator's integrated editor, then this
+can be added from the 'Tags' menu or from the HTML Inserter.
+Because this issue is unlikely to cause problems, consider
+ignoring or disabling this message. Visit
+https://www.w3.org/TR/html401/present/styles.html#default-st
+yle for more information. This message is displayed only
+once.
+
+  60: 
+  61: <div id="header">Chris Dumigan Musical Services</div>
+  62: 
+  63: <div class="links">
+
+  64: <p><a href="index.html">Home</a><br>
+------------------||||||||||
+
+[CSE] Message number 11 in line 64:13:
+If always serving this page from a web server (and not from
+a local file system), then it may be better not to specify
+the actual index document name "index.html". Consider using
+href="./" instead. Visit
+http://webtips.dan.info/subdir.html#LinkHome for more
+information about the benefits of this method. NOTE: This is
+just a suggestion and is not required by any official
+standard.
+
+  64: <p><a href="index.html">Home</a><br>
+---------------------------------------||
+
+[CSE] Message number 12 in line 64:34:
+Ensure that the "br" element is used only for line breaks
+that are actually part of the content, as in poems or
+addresses. For presentational formatting, CSS should be
+used. This message is displayed only once.
+
+  65: <a href="news.html">News</a><br>
+  66: <a href="teach.html">Teaching</a><br>
+  67: <a href="comp.html">Composing</a><br>
+  68: <a href="arr.html">Arranging</a><br>
+  69: <a href="trans.html">Transcribing</a><br>
+  70: <a href="perf.html">Performing</a><br>
+
+  71: <p><b>Shop</b><br>
+-------|
+
+[CSE] Message number 13 in line 71:2:
+[128] Assuming an omitted "p" end tag before this start tag.
+A previous "p" start tag (in line 64) does not have an end
+tag or the end tag (</p>) is in the wrong place. For better
+structure, it is recommended to explicitly end all "p"
+elements with an end tag. The omitted "</p>" end tag should
+probably be placed right before this start tag. This message
+is displayed up to 3 times.
+
+  71: <p><b>Shop</b><br>
+----------|
+
+[CSE] Message number 14 in line 71:5:
+Ensure that the "b" element is used appropriately and as a
+last resort when no other element is more appropriate. In
+particular, headings should use the "h1" to "h6" elements,
+stress emphasis should use the "em" element, importance
+should be denoted with the "strong" element, and text marked
+or highlighted should use the "mark" element. This message
+is displayed only once.
+
+  72: <span style="font-size: 15px;">
+  73: <a href="compshop.html">Compositions</a><br>
+  74: <a href="arrshop.html">Arrangements</a><br>
+  75: <a href="cdshop.html">CD's</a></span>
+  76: </p>
+  77: 
+  78: <br>
+  79: 
+  80: <div style="text-align: right; font-size: 12px; margin-left: 30px;">
+  81: Contact Chris:<br>
+  82: p - 07740 117956<br>
+
+  83: e - <a href="mailto:c.dumigan@ntlworld.com">c.dumigan@ntlworld.com</a><br>
+-------------------|||||||||||||||||||||||||||||
+
+[CSE] Message number 15 in line 83:14:
+[6] Email spam is a huge problem nowadays. Be aware that
+mailto email addresses are easily harvested for spam lists
+by automated programs. Consider alternate, but less
+user-friendly, ways of distributing email addresses if spam
+is a concern.
+
+  84: </div>
+  85: 
+  86: </div>
+  87: 
+  88: <div id="content">
+  89: 
+  90: <br>
+  91: 
+  92: <h1>Chris Dumigan</h1>
+  93: 
+  94: <div style="float: left; margin-bottom: 40px;">
+  95: 
+  96: <div class="item">
+
+  97:   <figure>
+---------||||||
+
+[CSE] Error number 1 in line 97:4:
+The HTML5 element "figure" was used but this does not appear
+to be an HTML5 document. This message is displayed only
+once.
+
+  98:     <a href="#apatinfo">
+------------------------------|
+
+[CSE] Message number 16 in line 98:25:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+  99:     <img src="images/cds/apat.png" alt="Another Place, Another Time">
+-----------|||
+
+[CSE] Message number 17 in line 99:6:
+It is recommended that the "height" and "width" attributes
+be used with the "img" element so browsers can leave the
+correct amount of space for them while downloading the image
+(which can take more time on mobile networks and devices).
+This will also prevent issues and annoyances due to reflow
+when the image becomes available or if image downloading is
+disabled. This message is displayed up to 5 times.
+
+  99:     <img src="images/cds/apat.png" alt="Another Place, Another Time">
+-----------|||
+
+[CSE] Message number 18 in line 99:6:
+Image searches can be a significant source of visitors and
+traffic. Therefore, try to use keywords when naming images,
+and separate keywords with hyphens (not underscores). This
+message is displayed only once.
+
+  99:     <img src="images/cds/apat.png" alt="Another Place, Another Time">
+-----------|||
+
+[CSE] Message number 19 in line 99:6:
+[7] Ensure that the "img" element is rarely, if ever, used
+as a layout tool. Always use CSS for layout and positioning.
+For example, do not use "img" elements to display
+transparent images which rarely convey meaning and rarely
+add anything useful to the document. This message is
+displayed only once.
+
+ 100:     </a>
+
+ 101:    <figcaption>
+----------||||||||||
+
+[CSE] Error number 2 in line 101:5:
+The HTML5 element "figcaption" was used but this does not
+appear to be an HTML5 document. This message is displayed
+only once.
+
+ 102: Another Place, Another Time
+------|||||||||||||||||||||||||||
+
+[CSE] Error number 3 in line 102:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 103:    </figcaption>
+ 104:   </figure>
+ 105: </div>
+ 106: 
+ 107: <div class="item">
+ 108:   <figure>
+
+ 109:     <a href="#ghostsinfo">
+--------------------------------|
+
+[CSE] Message number 20 in line 109:27:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 110:     <img src="images/cds/ghosts.png" alt="Ghosts">
+-----------|||
+
+[CSE] Message number 21 in line 110:6:
+It is recommended that the "height" and "width" attributes
+be used with the "img" element so browsers can leave the
+correct amount of space for them while downloading the image
+(which can take more time on mobile networks and devices).
+This will also prevent issues and annoyances due to reflow
+when the image becomes available or if image downloading is
+disabled. This message is displayed up to 5 times.
+
+ 111:     </a>
+ 112:    <figcaption>
+
+ 113: Ghosts
+------||||||
+
+[CSE] Error number 4 in line 113:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 114:    </figcaption>
+ 115:   </figure>
+ 116: </div>
+ 117: 
+ 118: <div class="item">
+ 119:   <figure>
+
+ 120:     <a href="#arrangements1info">
+---------------------------------------|
+
+[CSE] Message number 22 in line 120:34:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 121:     <img src="images/cds/arrangements1.png" alt="Making Arrangements">
+-----------|||
+
+[CSE] Message number 23 in line 121:6:
+It is recommended that the "height" and "width" attributes
+be used with the "img" element so browsers can leave the
+correct amount of space for them while downloading the image
+(which can take more time on mobile networks and devices).
+This will also prevent issues and annoyances due to reflow
+when the image becomes available or if image downloading is
+disabled. This message is displayed up to 5 times.
+
+ 122:     </a>
+ 123:    <figcaption>
+
+ 124: Making Arrangements
+------|||||||||||||||||||
+
+[CSE] Error number 5 in line 124:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 125:    </figcaption>
+ 126:   </figure>
+ 127: </div>
+ 128: 
+ 129: <div class="item">
+ 130:   <figure>
+
+ 131:     <a href="#arrangements2info">
+---------------------------------------|
+
+[CSE] Message number 24 in line 131:34:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 132:     <img src="images/cds/arrangements2.png" alt="Further Arrangements">
+-----------|||
+
+[CSE] Message number 25 in line 132:6:
+It is recommended that the "height" and "width" attributes
+be used with the "img" element so browsers can leave the
+correct amount of space for them while downloading the image
+(which can take more time on mobile networks and devices).
+This will also prevent issues and annoyances due to reflow
+when the image becomes available or if image downloading is
+disabled. This message is displayed up to 5 times.
+
+ 133:     </a>
+ 134:    <figcaption>
+
+ 135: Further Arrangements
+------||||||||||||||||||||
+
+[CSE] Error number 6 in line 135:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 136:    </figcaption>
+ 137:   </figure>
+ 138: </div>
+ 139: 
+ 140: <div class="item">
+ 141:   <figure>
+
+ 142:     <a href="#arrangements3info">
+---------------------------------------|
+
+[CSE] Message number 26 in line 142:34:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 143:     <img src="images/cds/arrangements3.png" alt="Alternative Arrangements">
+-----------|||
+
+[CSE] Message number 27 in line 143:6:
+It is recommended that the "height" and "width" attributes
+be used with the "img" element so browsers can leave the
+correct amount of space for them while downloading the image
+(which can take more time on mobile networks and devices).
+This will also prevent issues and annoyances due to reflow
+when the image becomes available or if image downloading is
+disabled. This message is displayed up to 5 times. This is
+the last time that this message will be generated. There may
+be other images missing these attributes.
+
+ 144:     </a>
+ 145:    <figcaption>
+
+ 146: Alternative Arrangements
+------||||||||||||||||||||||||
+
+[CSE] Error number 7 in line 146:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 147:    </figcaption>
+ 148:   </figure>
+ 149: </div>
+ 150: 
+ 151: </div>
+ 152: 
+ 153: <h1 style="padding-top: 342px;">Acoustic Moods</h1>
+ 154: 
+ 155: <div style="float: left; margin-bottom: 40px;">
+ 156: 
+ 157: <div class="item">
+ 158:   <figure>
+
+ 159:     <a href="#pluggedinfo">
+---------------------------------|
+
+[CSE] Message number 28 in line 159:28:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 160:     <img src="images/cds/plugged.jpg" alt="Acoustic Moods - Plugged">
+ 161:     </a>
+ 162:    <figcaption>
+
+ 163: Plugged
+------|||||||
+
+[CSE] Error number 8 in line 163:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 164:    </figcaption>
+ 165:   </figure>
+ 166: </div>
+ 167: 
+ 168: <div class="item">
+ 169:   <figure>
+
+ 170:     <a href="#suncatcherinfo">
+------------------------------------|
+
+[CSE] Message number 29 in line 170:31:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 171:     <img src="images/cds/suncatcher.jpg" alt="Acoustic Moods - Suncatcher">
+ 172:     </a>
+ 173:    <figcaption>
+
+ 174: Suncatcher
+------||||||||||
+
+[CSE] Error number 9 in line 174:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 175:    </figcaption>
+ 176:   </figure>
+ 177: </div>
+ 178: 
+ 179: <div class="item">
+ 180:   <figure>
+
+ 181:     <a href="#live98info">
+--------------------------------|
+
+[CSE] Message number 30 in line 181:27:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 182:     <img src="images/cds/live98.jpg" alt="Acoustic Moods - Live '98">
+ 183:     </a>
+ 184:    <figcaption>
+
+ 185: Live '98
+------||||||||
+
+[CSE] Error number 10 in line 185:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 186:    </figcaption>
+ 187:   </figure>
+ 188: </div>
+ 189: 
+ 190: <div class="item">
+ 191:   <figure>
+
+ 192:     <a href="#live98seinfo">
+----------------------------------|
+
+[CSE] Message number 31 in line 192:29:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 193:     <img src="images/cds/live98se.png" alt="Acoustic Moods - Live '98 (Special Edition) - 2 CD's">
+ 194:     </a>
+ 195:    <figcaption>
+
+ 196: Live '98 Special Edition<br>(2 CD's)
+------||||||||||||||||||||||||
+
+[CSE] Error number 11 in line 196:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 196: Live '98 Special Edition<br>(2 CD's)
+----------------------------------||||||||
+
+[CSE] Error number 12 in line 196:29:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 197:    </figcaption>
+ 198:   </figure>
+ 199: </div>
+ 200: 
+ 201: <div class="item">
+ 202:   <figure>
+
+ 203:     <a href="#g2info">
+----------------------------|
+
+[CSE] Message number 32 in line 203:23:
+[118] The link text of the "a" element begins and ends with
+whitespace. While technically allowable, this whitespace may
+not be wanted. NOTE: Newlines (line breaks) are considered
+whitespace. This message is displayed up to 10 times.
+
+ 204:     <img src="images/cds/g2.png" alt="Acoustic Moods - Conventional Wisdom (Live)">
+ 205:     </a>
+ 206:    <figcaption>
+
+ 207: Conventional Wisdom<br>(Live)
+------|||||||||||||||||||
+
+[CSE] Error number 13 in line 207:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 207: Conventional Wisdom<br>(Live)
+-----------------------------||||||
+
+[CSE] Error number 14 in line 207:24:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 208:    </figcaption>
+ 209:   </figure>
+ 210: </div>
+ 211: 
+ 212: <div class="item">
+ 213:   <figure>
+ 214:     <a href="#recollectionsinfo">
+ 215:     <img src="images/cds/recollections.png" alt="Acoustic Moods - Recollections (Live)">
+ 216:     </a>
+ 217:    <figcaption>
+
+ 218: Recollections<br>(Live - 2 CD's)
+------|||||||||||||
+
+[CSE] Error number 15 in line 218:1:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 218: Recollections<br>(Live - 2 CD's)
+-----------------------|||||||||||||||
+
+[CSE] Error number 16 in line 218:18:
+HTML 4 Strict, XHTML 1.0 Strict, XHTML 1.1, and XHTML Basic
+require that text and inline elements be contained in an
+appropriate container element such as one of the following:
+"p", a heading ("h1", "h2", etc.), a list item ("li"), a
+table ("caption", "td", "th"), etc. Text cannot be directly
+contained in "figcaption". Consider using HTML5, HTML 4
+Transitional, or XHTML 1.0 Transitional if you do not want
+to adhere to this strict requirement.
+
+ 219:    </figcaption>
+ 220:   </figure>
+ 221: </div>
+ 222: 
+ 223: </div>
+ 224: 
+ 225: <br><br>
+ 226: 
+ 227: </div>
+ 228: 
+ 229: <div id="footer">&copy; 2018 Chris Dumigan</div>
+ 230: 
+ 231: </div>
+ 232: 
+ 233: </body>
+ 234: </html>
+ 235: 
+ 236: <!-- Chris Dumigan Info Start -->
+ 237: 
+
+ 238: <div id="apatinfo" class="overlay">
+-------|||
+
+[CSE] Error number 17 in line 238:2:
+The "div" element (which has a parent of "div") cannot be
+used here. Was the "body" section prematurely ended (in line
+233)?
+
+ 239:  <div class="popup">
+--------|||
+
+[CSE] Error number 18 in line 239:3:
+The "div" element (which has a parent of
+"csestructurestorenodetree") cannot be used here. Was the
+"body" section prematurely ended (in line 233)?
+
+ 240:   <h1>Another Place, Another Time</h1>
+---------||
+
+[CSE] Error number 19 in line 240:4:
+The "h1" element (which has a parent of "div") cannot be
+used here. Was the "body" section prematurely ended (in line
+233)?
+
+ 240:   <h1>Another Place, Another Time</h1>
+------------|||||||||||||||||||||||||||
+
+[CSE] Error number 20 in line 240:7:
+Found text after the </html> end tag. Text should not appear
+here.
+
+ 241:   <a class="close" href="#/">&times;</a>
+
+[CSE] Error number 21 in line 241:
+Terminating validation due to too many errors. Please
+correct the errors and recheck the document. Checking is
+stopped after 20 errors (this can be changed in the 'Message
+Output' page of the Validator Engine Options).
+
+ 242:   <div class="review">
+ 243: <img src="images/cds/apat.png" alt="Another Place, Another Time">
+ 244: <div class="info">
+ 245: <p style="position: relative; left: -20px; margin-top: 10px;"><b>Track List</b></p>
+ 246: <ol style="position: relative; left: -20px;">
+ 247: <li>Another Place, Another Time (words by Brian Cooper)
+ 248: <li>Red Light Roses (words by Brian Cooper)
+ 249: <li>Pot of Gold (words by Brian Cooper)
+ 250: <li>The Veil
+ 251: <li>Hangups
+ 252: <li>Snowgeese Flying South (words by Chris Fogg)
+ 253: <li>Better Times
+ 254: <li>You and I
+ 255: <li>Hawthorn (words by Chris Fogg)
+ 256: <li>When You Leave
+ 257: <li>Lovely Teresa
+ 258: <li>Journey On
+ 259: </ol>
+ 260: 
+ 261: <!--
+ 262: <p style="padding: 10px; text-align: right;"><a href="#lyrics">'Ghosts' Lyrics</a></p>
+ 263: 
+ 264: <table style="width: 360px;">
+ 265: <tr><th>Samples</th><th>Reviews</th></tr>
+ 266: <tr><td><a href=".mp3" target="_blank">Sample 1</a><br></td><td><a href="#1">Review 1 - Alan Ratcliffe</a></td></tr>
+ 267: <tr><td><a href=".mp3" target="_blank">Sample 2</a><br></td><td><a href="#2">Review 2 - Julia Crowe</a></td></tr>
+ 268: </table>
+ 269: 
+ 270: <table style="width: 300px;">
+ 271: <tr><th>Reviews</th></tr>
+ 272: <tr><td><a href="#1">Review 1 - Alan Ratcliffe</a></td></tr>
+ 273: <tr><td><a href="#2">Review 2 - Julia Crowe</a></td></tr>
+ 274: </table>
+ 275: -->
+ 276: 
+ 277: </div>
+ 278: <div class="preface2">
+ 279: 
+ 280: <p class="code">Product Code: CDCD05</p>
+ 281: <p class="price">£10.00</p>
+ 282: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 283: 
+ 284: <p style="margin-top: 40px;">All words and music by Chris Dumigan, unless otherwise stated<br>
+ 285: Recorded, produced &amp; mastered by Chris Dumigan and Tony Ward<br>
+ 286: Photography: Brian Cooper</p>
+ 287: 
+ 288: </div>
+ 289:   </div>
+ 290:  </div>
+ 291: </div>
+ 292: 
+ 293: <div id="ghostsinfo" class="overlay">
+ 294:  <div class="popup">
+ 295:   <h1>Ghosts</h1>
+ 296:   <a class="close" href="#/">&times;</a>
+ 297:   <div class="review">
+ 298: <img src="images/cds/ghosts.png" alt="Ghosts">
+ 299: <div class="info">
+ 300: <p><b>Track List</b></p>
+ 301: <ol>
+ 302: <li>Ghosts
+ 303: <li>January
+ 304: <li>Turn Out the Light
+ 305: <li>Naughty Little Girl
+ 306: <li>Tomorrows and Yesterdays
+ 307: <li>Lonely
+ 308: <li>Don't Tell Me
+ 309: <li>Whispered
+ 310: <li>Poppies
+ 311: <li>Another Victim of a Broken Heart
+ 312: <li>The Loser
+ 313: <li>Afterwards
+ 314: <li>January (Instrumental)
+ 315: </ol>
+ 316: 
+ 317: <p style="padding: 10px; text-align: right;"><a href="#lyrics">'Ghosts' Lyrics</a></p>
+ 318: <!--
+ 319: <table style="width: 360px;">
+ 320: <tr><th>Samples</th><th>Reviews</th></tr>
+ 321: <tr><td><a href=".mp3" target="_blank">Sample 1</a><br></td><td><a href="#1">Review 1 - Alan Ratcliffe</a></td></tr>
+ 322: <tr><td><a href=".mp3" target="_blank">Sample 2</a><br></td><td><a href="#2">Review 2 - Julia Crowe</a></td></tr>
+ 323: </table>
+ 324: -->
+ 325: <table style="width: 300px;">
+ 326: <tr><th>Reviews</th></tr>
+ 327: <tr><td><a href="#1">Review 1 - Alan Ratcliffe</a></td></tr>
+ 328: <tr><td><a href="#2">Review 2 - Julia Crowe</a></td></tr>
+ 329: </table>
+ 330: 
+ 331: </div>
+ 332: <div class="preface2">
+ 333: 
+ 334: <p class="code">Product Code: CDCD04</p>
+ 335: <p class="price">£10.00</p>
+ 336: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 337: 
+ 338: <p style="margin-top: 70px;">It was Paul Simon that wrote on the back of his LP 'The Paul Simon Song Book': "I start with the knowledge that everything I wrote will turn and laugh at me. It is discomforting, almost painful to look back over something someone else created and realise that someone else was you." I remember being puzzled by these sleeve notes at the time, because everything I wrote I firmly believed and identified with, then.</p>
+ 339: 
+ 340: <p>The songs that make up 'Ghosts' were written as early as 1971 and as late as 1997 with the majority being written in the seventies. At the time they were my diaries, my confidants. Nearly all the people I ever fell in love with or hated the sight of are immortalised in these songs. But the fact remains that now, the feelings, the white heat with which I created these songs are gone, long gone. All the girls I fell in love with, all the reasons for which I wrote these emotional ditties (when the words were mine, of course) now mean nothing to me.  Now I understand what Paul Simon was getting at! But what remain here are some of the best songs I ever wrote. I plan this collection to be the first of three, god willing. I wrote nearly two hundred songs in those years, including the show songs from Stag and Marilyn, which have a permanent and special place in my heart. The remaining 150 or so have been whittled down to about three dozen that I am still inordinately proud of. Here are the first twelve. I hope you enjoy them as much I do.</p>
+ 341: 
+ 342: <p><i>Chris Dumigan, 2009</i></p>
+ 343: 
+ 344: </div>
+ 345:   </div>
+ 346:  </div>
+ 347: </div>
+ 348: 
+ 349: <div id="arrangements1info" class="overlay">
+ 350:  <div class="popup">
+ 351:   <h1>Making Arrangements</h1>
+ 352:   <a class="close" href="#/">&times;</a>
+ 353:   <div class="review">
+ 354: <img src="images/cds/arrangements1.png" alt="Making Arrangements">
+ 355: <div class="info">
+ 356: <p><b>Track List</b></p>
+ 357: <ol>
+ 358: <li>Annie's Song
+ 359: <li>Leaving on a Jet Plane
+ 360: <li>Vincent
+ 361: <li>And I Love You So
+ 362: <li>Killing Me Softly
+ 363: <li>Michelle
+ 364: <li>If I Fell
+ 365: <li>Here, There And Everywhere
+ 366: <li>And I Love Her
+ 367: <li>Moon River
+ 368: <li>Memory
+ 369: <li>Don't Cry For Me Argentina
+ 370: <li>Crazy
+ 371: <li>Scarlet Ribbons
+ 372: <li>Dream A Little Dream Of Me
+ 373: <li>Sealed With A Kiss
+ 374: <li>Somewhere Out There
+ 375: <li>When You Wish Upon a Star
+ 376: <li>Scarborough Fair
+ 377: <li>The Skye Boat Song
+ 378: <li>A Londonderry Air
+ 379: </ol>
+ 380: 
+ 381: <table style="width: 250px; position: relative; left: -290px; top: -60px;">
+ 382: <tr><th>Samples</th></tr>
+ 383: <tr><td><a href="samples/anniessong.mp3" target="_blank">Annie's Song</a><br></td></tr>
+ 384: <tr><td><a href="samples/theskyeboatsong.mp3" target="_blank">The Skye Boat Song</a><br></td></tr>
+ 385: </table>
+ 386: 
+ 387: </div>
+ 388: <div class="preface2">
+ 389: 
+ 390: <p class="code">Product Code: CDCD01</p>
+ 391: <p class="price">£10.00</p>
+ 392: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 393: 
+ 394: <p style="margin-top: 130px;">It was on a rainy night of September 1971 at St. John's College in Manchester that I first met Chris Dumigan, guitar case in hand, looking every inch a bedraggled muso!</p>
+ 395: 
+ 396: <p>A shared interest in music and an ambition on my part to play lead guitar in a rock band despite having no actual musical ability (punk rock would not appear until much later!) cemented our friendship.</p>
+ 397: 
+ 398: <p>In the ensuing years I have seen a talent that continues to impress me both in its quality and range. As Musical Director of the Genesis Theatre Company during the seventies his writing and arranging with partner and wordsmith Chris Fogg led to a prominent local radio station referring to them as 'Manchester's answer to Andrew Lloyd Webber and Tim Rice'. Their work was featured at the prestigious Royal Exchange Theatre on more than one occasion.</p>
+ 399: 
+ 400: <p>As a respected classical guitarist Chris has transcribed the complete recorded works of Agustin Barrios in seven volumes. These transcriptions are rapidly establishing themselves as the definitive reference edition for some of the world's leading guitarists. He composes pieces for one, two, or three guitars and a composition entitled 'A Garland of Grainger' was premiered at the Brighton Festival in1997 and has just been published. A piece for guitar and flute has recently been completed and is due to be debuted this year. He is also on the review panel of 'Classical Guitar' magazine.</p>
+ 401: 
+ 402: <p>In singer/songwriter mode, Chris is a prolific writer with some 120 titles to his credit spanning the last 30 years. He is presently working on a showcase CD of his favourite compositions.</p>
+ 403: 
+ 404: <p>In the last three years, Chris has played as part of the guitar trio 'Acoustic Moods', arranging and performing songs by Genesis and creating 'suites for guitar' from well-known musicals.</p>
+ 405: 
+ 406: <p>As if all this were not enough, this CD highlights yet another facet of his musicianship - the ability to take a well known tune and arrange it in a way that sets it apart from other 'easy listening' guitar music. A classical guitarist bringing classy arrangements to classic tunes.</p>
+ 407: 
+ 408: <p>I hope you enjoy listening to Chris Dumigan as much as I have during our long association, and if anyone does need a lead guitarist in a rock band - speak to Chris - he can almost certainly do that as well!</p>
+ 409: 
+ 410: <p><i>Brian Cooper, 1998</i></p>
+ 411: 
+ 412: </div>
+ 413:   </div>
+ 414:  </div>
+ 415: </div>
+ 416: 
+ 417: <div id="arrangements2info" class="overlay">
+ 418:  <div class="popup">
+ 419:   <h1>Further Arrangements</h1>
+ 420:   <a class="close" href="#/">&times;</a>
+ 421:   <div class="review">
+ 422: <img src="images/cds/arrangements2.png" alt="Further Arrangements">
+ 423: <div class="info">
+ 424: <p><b>Track List</b></p>
+ 425: <ol>
+ 426: <li>Something
+ 427: <li>Your Song
+ 428: <li>More Than Words
+ 429: <li>Elegy
+ 430: <li>Women of Ireland
+ 431: <li>The Twelfth of Never
+ 432: <li>Feed The Birds
+ 433: <li>Bridge Over Troubled Water
+ 434: <li>I Left My Heart In San Francisco
+ 435: <li>Smile
+ 436: <li>Let There Be Love
+ 437: <li>Girl
+ 438: <li>Raining In My Heart
+ 439: <li>A Groovy Kind Of Love
+ 440: <li>Theme from 'Somewhere In Time'
+ 441: <li>True Love Ways
+ 442: <li>In My Life
+ 443: <li>Time After Time
+ 444: </ol>
+ 445: 
+ 446: <table style="width: 250px; position: relative; left: -290px; top: 0px;">
+ 447: <tr><th>Samples</th></tr>
+ 448: <tr><td><a href="samples/yoursong.mp3" target="_blank">Your Song</a><br></td></tr>
+ 449: <tr><td><a href="samples/bridge.mp3" target="_blank">Bridge Over Troubled Water</a><br></td></tr>
+ 450: </table>
+ 451: 
+ 452: </div>
+ 453: <div class="preface2">
+ 454: 
+ 455: <p class="code">Product Code: CDCD02</p>
+ 456: <p class="price">£10.00</p>
+ 457: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 458: 
+ 459: <p style="margin-top: 120px;">It was on a rainy night in January of 1998 at Davyhulme in Manchester that Chris asked me to write the sleeve notes to his first CD ‘Making Arrangements’.</p>
+ 460: 
+ 461: <p>If you are sitting comfortably in your armchair reading this, you clearly appreciate Chris’ musicianship and will undoubtedly already own that first CD (if not, shame on you - buy it NOW).</p>
+ 462: 
+ 463: <p>In those days, making a CD was an expensive business which could only be done professionally. Nowadays every Tony, Dan & Charlie can record an album with consenting musicians in the privacy of their own bedroom and run off a CD in a Limited Edition of 1 but, happily, the initial investment was fully recouped and demand was sufficient for this second CD ‘Son Of Making Arrangements’ to be produced.</p>
+ 464: 
+ 465: <p>In those first sleeve notes I endeavoured to convey the all round uber-talent and Meister Musician that is Chris Dumigan and, fourteen years later, that position remains unchanged. He continues to write for Classical Guitar and has had many many pieces published in the intervening years. He still reviews books, sheet music and CD’s for Classical Guitar Magazine and is almost certainly their most published reviewer in recent times.</p>
+ 466: 
+ 467: <p>His output with Acoustic Moods, the guitar trio of Chris (Lead), Tony Ward (Rhythm) and Dan Coghill (Bass) together with honorary fourth member Chas (Sound Engineer) has been prolific. From the early days as an instrumental Genesis cover band, the group has gone on to establish its own identity as purveyors of intricate self-penned classically themed musical pieces of the highest quality. If you are unfamiliar with their work, treat yourself by logging onto their website and listening to the various samples available.</p>
+ 468: 
+ 469: <p>Also in those original notes I referred to the many songs Chris has written over the years and that he was working on a ‘showcase’ CD of his favourite compositions. That CD, ‘Ghosts’, has now seen the light of day (available from all good Chris Dumigan Musical Services websites now) and contains a superb mix of original songs which cannot fail to impress. And, guess what? A follow-up CD is already in the pipeline.</p>
+ 470: 
+ 471: <p>And throughout all this, the arrangements kept coming. His repertoire has increased with every passing gig and here we have a ‘Further’ 18 instantly recognisable tunes arranged in Chris’ own inimitable style.</p>
+ 472: 
+ 473: <p>I’ll say once more – A classical guitarist bringing classy arrangements to classic tunes (mainly because it was a typo first time around).</p>
+ 474: 
+ 475: <p>Sit back, relax and enjoy.</p>
+ 476: 
+ 477: <p><i>Brian Cooper, 2012</i></p>
+ 478: 
+ 479: </div>
+ 480:   </div>
+ 481:  </div>
+ 482: </div>
+ 483: 
+ 484: <div id="arrangements3info" class="overlay">
+ 485:  <div class="popup">
+ 486:   <h1>Alternatives Arrangements</h1>
+ 487:   <a class="close" href="#/">&times;</a>
+ 488:   <div class="review">
+ 489: <img src="images/cds/arrangements3.png" alt="Alternative Arrangements">
+ 490: <div class="info">
+ 491: <p><b>Track List</b></p>
+ 492: <ol>
+ 493: <li>The Long And Winding Road
+ 494: <li>If
+ 495: <li>Here Comes The Sun
+ 496: <li>Daydream
+ 497: <li>Theme from 'A Summer's Place'
+ 498: <li>Love Is Blue
+ 499: <li>We Have All The Time In The World
+ 500: <li>I Don’t Know How To Love Him
+ 501: <li>God Only Knows
+ 502: <li>Over The Rainbow
+ 503: <li>I Will
+ 504: <li>She
+ 505: <li>Wonderful Tonight
+ 506: <li>Besame Mucho
+ 507: <li>For No One
+ 508: <li>Lately
+ 509: <li>Fields of Gold
+ 510: <li>Brother Can You Spare A Dime?
+ 511: </ol>
+ 512: 
+ 513: <table style="width: 250px; position: relative; left: -290px; top: 0px;">
+ 514: <tr><th>Samples</th></tr>
+ 515: <tr><td><a href="samples/godonlyknows.mp3" target="_blank">God Only Knows</a><br></td></tr>
+ 516: <tr><td><a href="samples/rainbow.mp3" target="_blank">Over The Rainbow</a><br></td></tr>
+ 517: </table>
+ 518: 
+ 519: </div>
+ 520: <div class="preface2">
+ 521: 
+ 522: <p class="code">Product Code: CDCD03</p>
+ 523: <p class="price">£10.00</p>
+ 524: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 525: 
+ 526: <p style="margin-top: 120px;">Now, before I even begin to mention the weather in July 2012 at the Trafford Centre in Manchester, if you haven’t read the sleeve notes to Chris’ first two CD’s (‘Making Arrangements’ & ‘Further Arrangements’) then most of the following is likely to be a complete mystery to you, including any references to the four members of the Acoustic Moods guitar trio.</p>
+ 527: 
+ 528: <p>So, if that’s the case, do this properly - put this booklet back in the CD case, order the above mentioned CD’s now (you really should have had them already you know) and read the notes in chronological order – there’s a good chap/girl.</p>
+ 529: 
+ 530: <p>Anyway, it was raining.</p>
+ 531: 
+ 532: <p>It was then that Chris asked me to write the notes for not one, but two follow up albums to the original ‘Arrangements’ CD which was produced in 1998. Such was the sheer volume of arrangements he now had in his catalogue that just one sequel was hopelessly inadequate.</p>
+ 533: 
+ 534: <p>So, here we have ‘Grandson of Making Arrangements’ (or ‘Alternative Arrangements’ as Chris prefers), the next 18 track instalment of sublime arrangements of popular tunes which is a ‘must have’ at any dinner party and will virtually guarantee success as an accompaniment to any attempted late night seduction.</p>
+ 535: 
+ 536: <p>And the even better news is that it will not be the last – I can modestly admit to a not insignificant role in the naming of these albums and when the series eventually runs its course I have suggested ‘Final Arrangements’ as the title. This so horrified Chris with its doom laden implications that I think he would rather go on producing them than even begin to contemplate a CD with that title. Clever, eh?</p>
+ 537: 
+ 538: <p>But, while you are waiting impatiently for further titles in the series, you could do much worse than check out the Acoustic Moods CD’s, principally ‘UnPlugged’ and ‘Suncatcher’ for a different aspect of Chris’ work - one that highlights his incredible talent as a composer (both individually and jointly) in his own right. A third CD, containing the latest group compositions, will be available in the (hopefully not-too-distant) future.</p>
+ 539: 
+ 540: <p>Finally there are ‘the songs’ for you to listen to. Contained on the album ‘Ghosts’ these are recent recordings of works from Chris’ early period as a singer/songwriter with all the benefits of modern production techniques. All the music on this album was written by Chris but lyrics have been written by himself, together with various other contributors, giving an eclectic feel to the finished product. </p>
+ 541: 
+ 542: <p>Enjoy it all – as I continue to do. </p>
+ 543: 
+ 544: <p>Until the next time it rains in Manchester then……………</p>
+ 545: 
+ 546: <p><i>Brian Cooper, 2012</i></p>
+ 547: 
+ 548: </div>
+ 549:   </div>
+ 550:  </div>
+ 551: </div>
+ 552: 
+ 553: <!-- Chris Dumigan Info End -->
+ 554: <!-- Acoustic Moods Info Start -->
+ 555: 
+ 556: <div id="pluggedinfo" class="overlay">
+ 557:  <div class="popup">
+ 558:   <h1>Plugged</h1>
+ 559:   <a class="close" href="#/">&times;</a>
+ 560:   <div class="review">
+ 561: <img src="images/cds/plugged.jpg" alt="Acoustic Moods - Plugged">
+ 562: <div class="info">
+ 563: <p><b>Track List</b></p>
+ 564: <ol>
+ 565: <li>Happy Blues in 7/4
+ 566: <li>Jump To It
+ 567: <li>For Heather
+ 568: <li>2 Dances - 1. Kyle's Dance
+ 569: <li>2 Dances - 2. Alexander's Dance
+ 570: <li>Journey's End
+ 571: <li>Cute and Fluffy
+ 572: <li>Beverley's Falling Snowflakes
+ 573: <li>Freetime II
+ 574: <li>Recollections
+ 575: <li>A Winter's Tinkle
+ 576: <li>Celebration
+ 577: <li>Stag
+ 578: <li>Tryptych - Part 1: Dancing
+ 579: <li>Tryptych - Cadenza
+ 580: <li>Tryptych - Part 2: Dreaming
+ 581: <li>Tryptych - Part 3: Driving
+ 582: </ol>
+ 583: <br>
+ 584: <table style="width: 250px; position: relative; left: 20px;">
+ 585: <tr><th>Samples</th></tr>
+ 586: <tr><td><a href="samples/jumptoit.mp3" target="_blank">Jump To It</a><br></td></tr>
+ 587: <tr><td><a href="samples/recollections.mp3" target="_blank">Recollections</a><br></td></tr>
+ 588: </table>
+ 589: 
+ 590: </div>
+ 591: <div class="preface2">
+ 592: 
+ 593: <p class="code">Product Code: AMCD04</p>
+ 594: <p class="price">£10.00</p>
+ 595: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 596: 
+ 597: <p style="margin-top: 130px;">Well, here it is! 10 years and over 2 hours of original material after the band's debut concert, our first completely original album arrives, It contains the first of the 2 hours mentioned above, although not necessarily as they were when they were written. As many of you may know, our compositions do tend to evolve as they are performed more and more, so it comes as little surprise that, had we recorded these a few years ago when the most recent track on this album was completed (A Winter’s Tinkle), it would have been, on the whole, a fair bit easier to record!</p>
+ 598: <p>We could talk about how, despite age, the freshness is still there, perhaps aided by the increasing note—count and the size of... but maybe it's a little unfair to talk about Chris in such a way!</p>
+ 599: <p>Anyway, it's probably best not to ramble on too much here, so there’s just room left to wish you as much joy listening to this album as we did recording it.</p>
+ 600: <p>Finally, there's a big “thank you” to say to Chris' son, Kyle, for his fantastic job on the artwork for this CD. We look forward to frustrating him further during production of our next album, to be released in 2006.</p>
+ 601: <p>And, of course, thanks to you, the audience, for turning up at our concerts and for buying this CD.</p>
+ 602: <p><i>Chris, Tony and Dan, 2005</i></p>
+ 603: 
+ 604: </div>
+ 605:   </div>
+ 606:  </div>
+ 607: </div>
+ 608: 
+ 609: <div id="suncatcherinfo" class="overlay">
+ 610:  <div class="popup">
+ 611:   <h1>Suncatcher</h1>
+ 612:   <a class="close" href="#/">&times;</a>
+ 613:   <div class="review">
+ 614: <img src="images/cds/suncatcher.jpg" alt="Acoustic Moods - Suncatcher">
+ 615: <div class="info">
+ 616: <p><b>Track List</b></p>
+ 617: <ol>
+ 618: <li>New Beginnings
+ 619: <li>Slinky
+ 620: <li>Chantler Time
+ 621: <li>Little Pictures (for Felicity)
+ 622: <li>4G
+ 623: <li>Who Am I?
+ 624: <li>L for Leather
+ 625: <li>Another Mountain View
+ 626: <li>A Landscape in Oils
+ 627: <li>Suncatcher
+ 628: <li>Mooncatcher
+ 629: </ol>
+ 630: <br>
+ 631: <table style="width: 250px; position: relative; left: 20px;">
+ 632: <tr><th>Samples</th></tr>
+ 633: <tr><td><a href="samples/newbeginnings.mp3" target="_blank">New Beginnings</a><br></td></tr>
+ 634: <tr><td><a href="samples/whoami.mp3" target="_blank">Who Am I?</a><br></td></tr>
+ 635: </table>
+ 636: 
+ 637: </div>
+ 638: <div class="preface2">
+ 639: 
+ 640: <p class="code">Product Code: AMCD06</p>
+ 641: <p class="price">£10.00</p>
+ 642: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 643: 
+ 644: <p style="margin-top: 20px; font-weight: bold;">A message from the band...</p>
+ 645: <p>Suncatcher is our second album and a real (10 year!) labour of love, not only a "New Beginning" it takes the band in a new direction. Our style changed as we moved into more intricate melodies. This is also where our "ace of bass players" Dan also developed as a writer and arranger; indeed he arranged the title track within a week from a group jam session! Dan’s enthusiasm must have been contagious not only to the band, but also our live sound engineer Chas who wrote 46 for his wife and asked the band to record it.</p>
+ 646: <p>The studio technology available to us had finally caught up with our imagination. Everything was used to augment the sound, counter melodies, de-tuned guitars even a penny whistle! Tony has often said this is where he found his sound and style, namely a full rich combination of acoustic rhythm guitars.</p>
+ 647: <p>Of course this wouldn't be an Acoustic ‘Moods album without Chris at the helm with his uncanny knack for writing a killer melody such as Slinky and Who Am I.</p>
+ 648: <p>We feel this is our finest work to-date. Thank you for buying and we hope you get as much pleasure listening as we did creating this album.</p>
+ 649: </div>
+ 650:   </div>
+ 651:  </div>
+ 652: </div>
+ 653: 
+ 654: <div id="live98info" class="overlay">
+ 655:  <div class="popup">
+ 656:   <h1>Live '98</h1>
+ 657:   <a class="close" href="#/">&times;</a>
+ 658:   <div class="review">
+ 659: <img src="images/cds/live98.jpg" alt="Acoustic Moods - Live '98">
+ 660: <div class="info">
+ 661: <p><b>Track List</b></p>
+ 662: <ol>
+ 663: <li>No Son of Mine <i>(Genesis)</i>
+ 664: <li>Afterglow <i>(Genesis)</i>
+ 665: <li>Beverley's Falling Snowflakes <i>(Ward)</i>
+ 666: <li>A Regal Medley <i>(Queen)</i>
+ 667: <li>Journey's End <i>(Dumigan/Ward)</i>
+ 668: <li>2 Dances <i>(Dumigan)</i>
+ 669: <li>Cuckoo Cocoon <i>(Genesis)</i>
+ 670: <li>Congo <i>(Genesis)</i>
+ 671: <li>Time in a bottle <i>(Croce)</i>
+ 672: <li>Entangled <i>(Genesis)</i>
+ 673: <li>Tryptych <i>(Dumigan)</i>
+ 674: </ol>
+ 675: <br>
+ 676: <table style="position: relative; left: 20px; top: 0px;">
+ 677: <tr><th>Samples</th></tr>
+ 678: <tr><td><a href="samples/beverley.mp3" target="_blank">Beverley's Falling Snowflakes</a><br></td></tr>
+ 679: <tr><td><a href="samples/2dances.mp3" target="_blank">2 Dances</a><br></td></tr>
+ 680: </table>
+ 681: 
+ 682: </div>
+ 683: <div class="preface2">
+ 684: 
+ 685: <p class="code">Product Code: AMCD01</p>
+ 686: <p class="price">£8.00</p>
+ 687: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 688: 
+ 689: <p style="margin-top: 20px;">Every band needs to progress to produce interesting music and 1998 was a big move forward for Acoustic Moods. The introduction of new bass player Dan Coghill brought a new edge to the group. Unlike the last album which was a carbon copy of one concert, this album comprises of an entire year of concerts. It's 1998 and it's Live.</p>
+ 690: <p><i>Anthony Ward, 1999</i></p>
+ 691: 
+ 692: </div>
+ 693:   </div>
+ 694:  </div>
+ 695: </div>
+ 696: 
+ 697: <div id="live98seinfo" class="overlay">
+ 698:  <div class="popup">
+ 699:   <h1>Live '98 Special Edition</h1>
+ 700:   <a class="close" href="#/">&times;</a>
+ 701:   <div class="review">
+ 702: <img src="images/cds/live98se.png" alt="Acoustic Moods - Live '98 Special Edition">
+ 703: <div class="info">
+ 704: <p><b>Track List</b></p>
+ 705: <p><b>Disc 1</b></p>
+ 706: <ol>
+ 707: <li>No Son of Mine <i>(Genesis)</i>
+ 708: <li>Afterglow <i>(Genesis)</i>
+ 709: <li>Beverley's Falling Snowflakes <i>(Ward)</i>
+ 710: <li>A Regal Medley <i>(Queen)</i>
+ 711: <li>Journey's End <i>(Dumigan/Ward)</i>
+ 712: <li>2 Dances <i>(Dumigan)</i>
+ 713: <li>Cuckoo Cocoon <i>(Genesis)</i>
+ 714: <li>Congo <i>(Genesis)</i>
+ 715: <li>Time in a bottle <i>(Croce)</i>
+ 716: <li>Entangled <i>(Genesis)</i>
+ 717: <li>Tryptych <i>(Dumigan)</i>
+ 718: </ol>
+ 719: <br>
+ 720: <p><b>Disc 2</b></p>
+ 721: <ol>
+ 722: <li>Squonk <i>(Genesis)</i>
+ 723: <li>The Les Miserables Suite <i>(Sch&ouml;nberg/Kretzmer)</i>
+ 724: <li>BBC GMR Interview, <i>(The Lee Stone Show)</i>*
+ 725: </ol>
+ 726: <br>
+ 727: <p style="font-size: smaller;">*BBC Interview was broadcast on Friday 13th October 2000 and includes "No Son of Mine".</p>
+ 728: <table style="width: 250px; position: relative; left: -290px; top: -70px;">
+ 729: <tr><th>Samples</th></tr>
+ 730: <tr><td><a href="samples/beverley.mp3" target="_blank">Beverley's Falling Snowflakes</a><br></td></tr>
+ 731: <tr><td><a href="samples/2dances.mp3" target="_blank">2 Dances</a><br></td></tr>
+ 732: </table>
+ 733: 
+ 734: </div>
+ 735: <div class="preface2">
+ 736: 
+ 737: <p class="code">Product Code: AMCD03</p>
+ 738: <p class="price">£10.00</p>
+ 739: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 740: 
+ 741: <p style="margin-top: 130px;">Every band needs to progress to produce interesting music and 1998 was a big move forward for Acoustic Moods. The introduction of new bass player Dan Coghill brought a new edge to the group. Unlike the last album which was a carbon copy of one concert, this album comprises of an entire year of concerts. It's 1998 and it's Live.</p>
+ 742: <p><i>Anthony Ward, 1999</i></p>
+ 743: 
+ 744: </div>
+ 745:   </div>
+ 746:  </div>
+ 747: </div>
+ 748: 
+ 749: <div id="g2info" class="overlay">
+ 750:  <div class="popup">
+ 751:   <h1></h1>
+ 752:   <a class="close" href="#/">&times;</a>
+ 753:   <div class="review">
+ 754: <img src="images/cds/g2.png" alt="Acoustic Moods - ">
+ 755: <div class="info">
+ 756: <p><b>Track List</b></p>
+ 757: <ol>
+ 758: <li>No Son of Mine
+ 759: <li>Dancing with the Moonlit Knight
+ 760: <li>Carpet Crawlers
+ 761: <li>Driving the Last Spike
+ 762: <li>Cuckoo Cocoon
+ 763: <li>Congo
+ 764: <li>Fading Lights
+ 765: <li>Blood on the Rooftops
+ 766: <li>Follow You, Follow Me
+ 767: <li>Afterglow
+ 768: <li>Horizons
+ 769: </ol>
+ 770: <p><b>A Trick of the Tail Suite</b></p>
+ 771: <ol start="12">
+ 772: <li>Dance on a Volcano
+ 773: <li>Entangled
+ 774: <li>Squonk
+ 775: <li>It's Yourself
+ 776: <li>Mad Man Moon
+ 777: <li>Robbery, Assault and Battery
+ 778: <li>Ripples
+ 779: <li>A Trick of the Tail
+ 780: <li>Los Endos
+ 781: </ol>
+ 782: 
+ 783: <table style="width: 250px; position: relative; left: -290px; top: -80px;">
+ 784: <tr><th>Samples</th></tr>
+ 785: <tr><td><a href="samples/afterglow.mp3" target="_blank">Afterglow</a><br></td></tr>
+ 786: <tr><td><a href="samples/volcano.mp3" target="_blank">Dance on a Volcano</a><br></td></tr>
+ 787: </table>
+ 788: 
+ 789: </div>
+ 790: <div class="preface2">
+ 791: 
+ 792: <p class="code">Product Code: AMCD02</p>
+ 793: <p class="price">£8.00</p>
+ 794: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 795: 
+ 796: <p style="margin-top: 130px; font-weight: bold;">A message from the band...</p>
+ 797: <p>This recording encapsulates a very special event for us. We have been playing our music quietly and unobtrusively for five years or so now, just for the love of it. Genesis music has always been a part of our very being, and the original reason for the band getting together was to try to bring something new to this wonderful music.</p>
+ 798: <p>It was a great honour to be invited to play at the prestigious G2 Convention. Of course we had no idea how we would go down with an audience of staunch Genesis fans, they being used to hearing their sacred pieces recreated note for note; us playing radically different arrangements and interpretations. So, it was with great trepidation (not to say blind panic) that the opening notes to No Son Of Mine sounded from 24 shaky fingers. We should have known better, the audience reaction was fantastic.</p>
+ 799: <p>After the first couple of tunes we relaxed and really began to enjoy the experience. We can honestly say that we have never felt better playing this music and feeling coming back from the auditorium was like a homecoming. By the end of the Trick Suite we were on cloud nine. It took us a week to come down from those clouds, and we will remember that reception for the rest of our lives. So to the people at G2 we met, played for, spoke to, shook hands with, signed autographs for and whose names we will probably never know, a huge thank you. You made G2 an unforgettable experience for us. For those of you who missed out, we hope this CD will enable you to experience a little part of the G2 magic.</p>
+ 800: <p>This recording represents our entire G2 set, (Saturday 3 lst March 2001 at the Guildford Civic Hall). To enable the whole recording to fit onto one CD we have edited introductions and applause. The music, however, remains intact.</p>
+ 801: 
+ 802: </div>
+ 803:   </div>
+ 804:  </div>
+ 805: </div>
+ 806: 
+ 807: <div id="recollectionsinfo" class="overlay">
+ 808:  <div class="popup">
+ 809:   <h1></h1>
+ 810:   <a class="close" href="#/">&times;</a>
+ 811:   <div class="review">
+ 812: <img src="images/cds/recollections.png" alt="Acoustic Moods - ">
+ 813: <div class="info">
+ 814: <p><b>Track List</b></p>
+ 815: <p><b>Disc 1</b></p>
+ 816: <ol>
+ 817: <li>Recollections <i>(Dumigan/Ward/Coghill)</i>
+ 818: <li>Jump To It <i>(Dumigan/Ward/Coghill)</i>
+ 819: <li>Fading Lights <i>(Genesis)</i>
+ 820: <li>Beverley's Falling Snowflakes <i>(Ward)</i>
+ 821: <li>Cuckoo Cocoon <i>(Genesis)</i>
+ 822: <li>Congo (Genesis)
+ 823: <li>Freetime 2.1 <i>(Coghill/Dumigan/Ward)</i>
+ 824: <li>Phantom Suite <i>(Lloyd Webber arr. Dumigan)</i>
+ 825: <li>Fires In Your Cities <i>(Dumigan)</i>
+ 826: <li>Stag <i>(Dumigan)</i>
+ 827: <li>Cute and Fluffy <i>(Dumigan/Ward)</i>
+ 828: <li>Tryptych <i>(Dumigan)</i>
+ 829: </ol>
+ 830: <p><b>Disc 2</b></p>
+ 831: <ol>
+ 832: <li>Nivram <i>(Marvin)</i>
+ 833: <li>Happy Blues In 7/4 <i>(Ward/Dumigan/Coghill)</i>
+ 834: <li>For Heather <i>(Dumigan)</i>
+ 835: <li>Slinky <i>(Dumigan)</i>
+ 836: <li>A Winter's Tinkle <i>(Dumigan/Ward/Coghill)</i>
+ 837: <li>Little Pictures <i>(Dumigan)</i>
+ 838: <li>Follow You, Follow Me <i>(Genesis)</i>
+ 839: <li>Who Am I?/Legend <i>(Dumigan)</i>
+ 840: <li>A Trick of the Tail <i>(Genesis)</i>
+ 841: <li>Entangled <i>(Genesis)</i>
+ 842: <li>L for Leather <i>(Coghill/Dumigan)</i>
+ 843: <li>Suncatcher <i>(Acoustic Moods)</i>
+ 844: </ol>
+ 845: 
+ 846: <table style="width: 250px; position: relative; left: -290px; top: -190px;">
+ 847: <tr><th>Samples</th></tr>
+ 848: <tr><td><a href="samples/freetime2.mp3" target="_blank">Freetime 2</a><br></td></tr>
+ 849: <tr><td><a href="samples/slinky.mp3" target="_blank">Slinky</a><br></td></tr>
+ 850: </table>
+ 851: 
+ 852: </div>
+ 853: <div class="preface2">
+ 854: 
+ 855: <p class="code">Product Code: AMCD05</p>
+ 856: <p class="price">£10.00</p>
+ 857: <p class="chris"><a href="mailto:chris.dumigan@googlemail.com">Buy from Chris (email)</a></p>
+ 858: 
+ 859: <p style="margin-top: 220px;">The early part of the 2000's proved to be a busy period for Acoustic Moods. with performances at a variety of venues in th UK and the release at the band's first completely original studio album, coinciding with their 10th anniversary. This live album covers a period of time involving a great deal of new material, some heard here for the first time.</p>
+ 860: <p><i>Dan Coghill, 2006</i></p>
+ 861: 
+ 862: </div>
+ 863:   </div>
+ 864:  </div>
+ 865: </div>
+ 866: 
+ 867: <!-- Acoustic Moods Info End -->
+ 868: <!-- Ghosts Reviews Start -->
+ 869: <div id="1" class="overlay">
+ 870:  <div class="popup">
+ 871:   <h1>Ghosts</h1>
+ 872:   <a class="close" href="#ghostsinfo">&times;</a>
+ 873:   <div class="review">
+ 874: <p style="font-weight: bold;"><a name="1">Review - by Alan Ratcliffe</a></p>
+ 875: 
+ 876: <p>Gosh time flies! I reviewed Chris’ band’s (Acoustic Moods) album ‘Unplugged’ back in – wow – way back in 2006. Then, I was struggling for a genre to describe the music, and I compared Acoustic Moods to ‘The Shadows meets Genesis’. Again, this time around, I was struggling for a genre. There’s real Lancashire-dialect folk singing that moves into fabulous 4-or-5-part harmonies, simple acoustic guitar joining into dozens of electric instruments. Difficult to pigeon-hole again. But read on….</p>
+ 877: 
+ 878: <p>When I listened to Ghosts for the first time, to be quite honest, there were a number of tracks that I just simply did not like. (My background is playing just about every kind of music from military and classical to big-band, rock and jazz – but not folk. I’m just not a great lover of folk music – except when it’s live in front of me.)</p>
+ 879: 
+ 880: <p>Despite my early reactions, I wanted to do the album justice and listen objectively. So, constrained by time, or lack of it, I’ve listened to it in fits and starts over some eight months. Probably the whole album in total around 5 times. In the track-by-track reviews, I’ve given my early opinions, and then my fifth-time-of-hearing opinion. You can see the differences – I was quite amazed when I compared my early set of notes to my last set that I had written without sight of my originals. Almost like reading reviews of two totally-different albums.</p>
+ 881: 
+ 882: <p>It was around the fifth time of listening that the light went on. A BIG light. It really did. If you swap the lovely tones of Sandy Denny for the arguably-lovely tones of Chris Dumigan, there are quite a few tracks where you could be listening to an early Fairport Convention – albeit with better drums and recording technology, particularly in the harmonies.</p>
+ 883: 
+ 884: <p>It really goes to show that this album really DOES grow on you!!! I started with the view – “Well, I’ll have to find time to listen to that album of Chris’ “, and over time, it has slowly-but-surely become – “What shall I listen to on my iPod on the train home tonight? I’ll listen to Chris” – by choice!!</p>
+ 885: 
+ 886: <p>The fact that Chris has performed most of the singing (except for a couple of tracks where Chris was augmented by Dan and Tony)  for even the so – called  Urmston West African Gospel Choir on Afterwards , are  Chris , Dan and two females layered over 60 times!  and played just about all the instruments (except for guitar and bass on a couple of tracks by Tony and Dan) demonstrates Chris’ musical prowess. I’ve re-written the next bit because I also wrote that Chris was obviously quite an editing and layering wizard – but in fact the sleeve notes show that this praise very much goes to Tony!</p>
+ 887: 
+ 888: <p>It also demonstrates Chris’ rich imagination for the production – he uses quite an array of instruments, layered together quite expertly, and shows just why he was the Musical Director of various musicals in the 70’s. So – if you like what I can only describe as folk-rock, with some fabulous instrumentation and rich harmonies, then buy a copy from Chris. It might take YOU six months to really appreciate it. But I’m pretty certain that you will.</p>
+ 889: 
+ 890: 
+ 891: <p style="font-weight: bold;">Track by track review.</p>
+ 892: 
+ 893: <p><b>Track 1</b> - <b>Ghosts</b> - I love the piano on this. In fact, its style and mood remind me a little of Neil Harrison (the guy who looks, sounds like, and portrays John Lennon in the Bootleg Beatles) but not quite so Lennon-esque. Chris sings with quite a gentle, melancholic voice - and then the neat burst of electric guitar is gentle and sad. They used to say that Eric Clapton tells the story with his guitar - so does Chris!!</p>
+ 894: 
+ 895: <p><b>Track 2</b> - <b>January</b> - has a familiar electric bass sound sitting underneath the twinned acoustic guitars. I like. Firstly we have the first appearance of the Lancashire folk style. But then comes the double-tracking of Chris’s voice gives it greater atmosphere and richness. A (little) bit reminiscent of Jethro Tull’s Ian Anderson? And here come those glorious harmonies...</p>
+ 896: 
+ 897: <p><b>Track 3</b> - <b>Turn Out the Light</b> - This HAS to be the first single off the album (assuming there’s a record company reading this!!) There is the Instant Hook – the opening life breathing through this track and then the chord progression flirts with the taste buds. And then your brain realises that you are subliminally listening to the words and following the chord progression. And then he layers-in the harmonies. Love it. Just love it. It’s straight from the heart. And it makes a change for me to listen to vocals before getting deep into the music...</p>
+ 898: 
+ 899: <p><b>Track 4</b> - <b>Naughty Little Girl</b> - a heavier track. It’s a lively start, no surprise when those angry vocals come in!! You can FEEL the anger. The overall percussion - drums in particular - and subtle electric guitar give it the power that the lyrics demand. I thought that the middle instrumental was VERY Genesis!! And a few overtones of Tommy by The Who! (I wonder where that influence came from?!) I just LOVE the instruments and voices in the fading out!!</p>
+ 900: 
+ 901: <p><b>Track 5</b> – <b>Tomorrows and Yesterdays</b> – Just LOVE the intro – electric guitar and heavy-ish drums with a de-tuned, loose-skinned sound. That kind of raw feel gives it a forceful atmosphere. The production is just excellent. The choice of drum sound is inspirational – as are the harmonies. An instant favourite. And – maybe because of that firm drum sound that reminds me of the garage-environment recording of ‘You Win Again’ – I could hear the Bee Gees singing this with Robin Gibb taking that melancholy lead.</p>
+ 902: 
+ 903: <p><b>Track 6</b> - <b>Lonely</b> - has quite an eerie start - I expected either a Metallica-type voice coming in here or to see a flight of Lancaster bombers flying overhead!! I was foot-tapping instantly to the catchy guitar-strumming, then come the harmonies to give it some beef...</p>
+ 904: 
+ 905: <p><b>Track 7</b> - <b>Don't Tell Me</b> - Starts with just Chris and a lovely, rich, acoustic piano. And Chris’ fierce emotion. This track demonstrates Chris’ ability to put a good melody together. This could be the follow-up to Chris’ next single! I originally wrote that I wasn’t too impressed by the “Aaaahs” – but they fit in really well after a few listenings.</p>
+ 906: 
+ 907: <p><b>Track 8</b> - <b>Whispered</b> - opens with a superb, jangly, bright arpeggio guitar. Could be an early REM track, particularly with a slightly-syncopated electric bass underneath - what a lovely combination!</p>
+ 908: 
+ 909: <p><b>Track 9</b> - <b>Poppies</b> - Quite a change in view on this one!!! My original thoughts were “Is that a mandolin? This is like an early Led Zeppelin! Not convinced about the glockenspiel though.” How wrong could I be? It’s actually a ‘Nashville’ guitar, and grows on you. But it DOES start like an acoustic Led Zeppelin track . . . .  By now I’ve grown to like the glockenspiel - it brings the Spring season to the song, the poppies growing. It was this track where the light came on - ‘Fairport Convention’ light bulb above my head. Listen for yourself, see if you can see the Fairport Convention but all-male vocals and modern recording techniques!!! Personally I think this track not only sounds grand, but is CLEVER.</p>
+ 910: 
+ 911: <p><b>Track 10</b> - <b>Another Victim of a Broken Heart</b> - What a fabulous production! Even the opening solo piano begins the melancholy. The words and drumming could be from Phil Collins. At my latest listening session, the 'Falling Apart' now sounds so familiar I'm really hooked on this track. OK so it’s a sad, heartbreaking track. But I love the music. And I’ve JUST realised that the harmonies in the middle section could be from 80’s Genesis... Terrific song, with lyrics  by Tony Ward.</p>
+ 912: 
+ 913: <p><b>Track 11</b> - <b>The Loser</b> - Gosh. it’s that acoustic Led Zeppelin sound again!! Very tasteful group voices and harmonies. I'm not usually one for concentrating on the lyrics of a song until I'm comfortable with the music - this sometimes takes years!!! However, on this track I found the bright and intriguing lyrics dragging my curiosity deeper and deeper into the song, always wondering where this was leading me!! I'm not telling you - YOU listen!!</p>
+ 914: 
+ 915: <p><b>Track 12</b> - <b>Afterwards</b> - The first time I listened I simply wrote “ANOTHER sad song... Neil Harrison again... Didn't like this one - production - drumming, brass, seems wrong, acoustic guitar solo at around 4 minutes seemed a bit ragged. the harmonies are folk-style with a deep bass voice underneath and at 6.30 it's too long!!!”</p>
+ 916: 
+ 917: <p>However - after the fifth time of listening, I have TOTALLY changed my opinion. I now LOVE this song. Yes, it's sad. Oh-so-sad. REALLY REALLY sad. The sadness is reflected in the chord progressions and the 3/4 time. Then it HIT me - it's a bit like 'Pretty Maids All In A Row' on the Eagles’ Hotel California. That song jerks my heart strings and brings tears to my eyes, too. This song digs up those buried emotions of youthful heartache. I was just getting back in control when the violins hit. Enough said.</p>
+ 918: 
+ 919: <p> <b>Track 13</b> - <b>January</b> (Instrumental) - I like this - except for the electric bass. On the guitars, this is Chris at his imperious, folk-rock acoustic best. Normally (like in Acoustic Moods and on other tracks on this album) I love Chris' underlying electric bass, but in my humble opinion I personally think that this track would be better without it. But hey - YOU judge for yourself and then agree or disagree!!!</p>
+ 920: 
+ 921: <p style="font-weight: bold;">&copy; Alan Ratcliffe 2010</p>
+ 922:   </div>
+ 923:  </div>
+ 924: </div>
+ 925: 
+ 926: <div id="2" class="overlay">
+ 927:  <div class="popup">
+ 928:   <h1>Ghosts</h1>
+ 929:   <a class="close" href="#ghostsinfo">&times;</a>
+ 930:   <div class="review">
+ 931: <p style="font-weight: bold;"><a name="2">Review - by Julia Crowe</a></p>
+ 932: 
+ 933: <p>Chris Dumigan's 'Ghosts' is a fun, sonic diary showcasing two decades of his songwriting and guitar-playing skills from the early 70s to 90s, opening with his pensive and melodic title track, which reflects longingly but lovingly upon time past.  Like the artwork on his CD, which shows Dumigan at various ages holding different makes of favorite guitars, all his musical selves merge seamlessly with beautiful acoustic guitar melodies, notably in 'Lonely' and 'January.'  His Paul Simon-meets-Randy-Newman-flavored songs conjure enjoyably tuneful flashbacks and daydreams like a  radio-infused summer road trip.</p>
+ 934: 
+ 935: <p style="font-weight: bold;">&copy; Julia Crowe 2010</p>
+ 936:   </div>
+ 937:  </div>
+ 938: </div>
+ 939: 
+ 940: <!-- Ghosts Reviews End -->
+ 941: <!-- Ghosts Lyrics Start -->
+ 942: 
+ 943: <div id="lyrics" class="overlay">
+ 944:  <div class="popup">
+ 945:   <h1>'Ghosts' Lyrics</h1>
+ 946:   <a class="close" href="#ghostsinfo">&times;</a>
+ 947:   <div class="review">
+ 948: 
+ 949: <p>In an effort to save paper and ink, Chris decided to omit the lyrics from the CD booklet for<br>'Ghosts' and put the up on the website instead. So, as promised here they are!</p>
+ 950: 
+ 951: <p>Click on each song title to see the lyrics.</p>
+ 952: 
+ 953: <div>
+ 954:   <a type="button" class="" data-toggle="collapse" data-target="#demo" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Ghosts</a>
+ 955:   <div id="demo" class="collapse" style="padding-left: 20px;">
+ 956: <p style="color: #0c4a00;">Music and Lyrics by Chris Dumigan</p>
+ 957: <p>I want to go back,<br>
+ 958: Back to those days.<br>
+ 959: That I thought would never end,<br>
+ 960: That I thought would never end.<br><br>
+ 961: Listening, they haunt me now.<br>
+ 962: More than  they ever did then,<br>
+ 963: More than  they ever did then,<br><br>
+ 964: And I listen and smile with a sadness.<br>
+ 965: Knowing that they've gone forever<br>
+ 966: Never to return<br>
+ 967: And all the people that were part of it,<br>
+ 968: Will never be together in the same place again.<br><br>
+ 969: Ever<br>
+ 970: For all time to come.<br><br>
+ 971: As the tunes float across my ears they capture me.<br>
+ 972: And the magic returns,<br>
+ 973: And the magic returns.<br><br>
+ 974: And I want to go back,<br>
+ 975: Back to those days.<br>
+ 976: That we thought would never end<br>
+ 977: That we thought would never end.</p>
+ 978:   </div>
+ 979: </div>
+ 980: 
+ 981: <div>
+ 982:   <a type="button" class="" data-toggle="collapse" data-target="#january" style="font-family: gothic; font-size: 20px; color: #0c4a00;">January</a>
+ 983:   <div id="january" class="collapse" style="padding-left: 20px;">
+ 984: <p style="color: #0c4a00;">Music and Lyrics by Chris Dumigan</p>
+ 985: <p>The moon is falling gently through the trees.<br>
+ 986: As I look at my frosty window pane.<br>
+ 987: And she is calling to me softly.<br>
+ 988: Through the January rain.<br>
+ 989: Through the January rain.<br><br>
+ 990: 
+ 991: And as I wake the sun shines on my room.<br>
+ 992: The sky lit up and showing all its glow.<br>
+ 993: And she is whispering to me gently,<br>
+ 994: Through the January snow.<br>
+ 995: Through the January snow.<br><br>
+ 996: 
+ 997: And in the evening nature slumbers now.<br>
+ 998: I walk in peace along the wooded lane.<br>
+ 999: And she still calls to me so softly.<br>
+1000: Through the January rain.<br>
+1001: Through the January rain.</p>
+1002:   </div>
+1003: </div>
+1004: 
+1005: <div>
+1006:   <a type="button" class="" data-toggle="collapse" data-target="#light" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Turn Out the Light</a>
+1007:   <div id="light" class="collapse" style="padding-left: 20px;">
+1008: <p style="color: #0c4a00;">Music and Lyrics by Chris Dumigan</p>
+1009: <p>Though you're not so far away, I miss you<br>
+1010: Every minute of the day it's just the same.<br>
+1011: Just lately I've been getting used to having you around<br>
+1012: And to have these miles between us well it's just getting me down.<br><br>
+1013: 
+1014: I know that all I need to do is phone you.<br>
+1015: But to hear your voice is really not the same<br>
+1016: I'd only want you here beside me if I heard you speak right now<br>
+1017: So I'll wait a little longer, yes I'll get along somehow.<br><br>
+1018: 
+1019: And I want you so bad it hurts me.<br>
+1020: And I need you so much I'm a fool<br>
+1021: Now don't tell me I'm mad, I don't need that advice.<br>
+1022: With pain such as this, there's no wrong or no right<br>
+1023: And if I had things my way, well you'd be here tonight.<br>
+1024: But you're not so I'll turn out the light.<br><br>
+1025: 
+1026: I've never been the sort of guy to rush it<br>
+1027: So I often wished you could have read my mind<br>
+1028: It would have made it all so easy; words are always hard for me<br>
+1029: So I'll tell you what I'm thinking, then there'll be no doubt you see.<br><br>
+1030: 
+1031: That I wanted you the minute that I saw you,<br>
+1032: Another girl like you would be so hard to find.<br>
+1033: I've wasted too much time before and usually lost my chance.<br>
+1034: But I won't make that mistake again; I don't need a second glance.<br><br>
+1035: 
+1036: Yes I want you so bad it hurts me...</p>
+1037:   </div>
+1038: </div>
+1039: 
+1040: <div>
+1041:   <a type="button" class="" data-toggle="collapse" data-target="#naughty" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Naughty Little Girl</a>
+1042:   <div id="naughty" class="collapse" style="padding-left: 20px;">
+1043: <p style="color: #0c4a00;">Music and Lyrics by Chris Dumigan</p>
+1044: <p>What do you really think you are, do you think that you're real fine?<br>
+1045: When you called me up and came around, still spinning me that line.<br>
+1046: I bet it gave you quite a kick, to see me jump again.<br>
+1047: But don't you bother about me now, you never did before then.<br><br>
+1048: 
+1049: And if you think I'm bitter, you can bet your life you're right.<br>
+1050: But only 'cause I fell for that old line not once but twice<br>
+1051: But there won't be a third time no you won't get the chance again.<br>
+1052: Now you even spoiled you're chances of remaining just a friend.<br><br>
+1053: 
+1054: I really feel quite sorry for the guy who'll fall for you.<br>
+1055: If he hasn't got the strength of mind, to laugh off the things you do.<br>
+1056: For you'll eat him up and when you're finished,<br>
+1057: spit him out on the floor.<br>
+1058: And then what's left of him won't really amount to much anymore.<br><br>
+1059: 
+1060: For you're nothing but a danger to ordinary lads but me.<br>
+1061: You're so screwed up inside, you just see what you want to see.<br>
+1062: But if you realise the things that you did<br>
+1063: and go to call me on the phone,<br>
+1064: just forget it. I was never that alone.<br><br>
+1065: 
+1066: You're a menace to society, a naughty little girl<br>
+1067: Weren't you ever spanked for doing what you do?<br>
+1068: The trouble is you don't know when to stop and call it off.<br>
+1069: But watch out girl,<br>
+1070: for someone someday might just do the same to you.<br><br>
+1071: 
+1072: You must have thought me pretty green to do the things you did.<br>
+1073: The trouble was I never saw the feelings that you hid<br>
+1074: I think you saw me as a sucker you could use a time or two.<br>
+1075: But you can reassure yourself that now I'm really wise to you.<br><br>
+1076: 
+1077: So I guess I'll have to hide my heart and keep it locked up away.<br>
+1078: Keep it safely hidden 'til another rainy day.<br>
+1079: Until another comes along, for I know she'll come really soon.<br>
+1080: But one thing I know for sure, it won't be you.<br>
+1081: Oh no, it won't be you.<br><br>
+1082: 
+1083: You're a menace to society...</p>
+1084:   </div>
+1085: </div>
+1086: 
+1087: <div>
+1088:   <a type="button" class="" data-toggle="collapse" data-target="#tomorrows" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Tomorrows and Yesterdays</a>
+1089:   <div id="tomorrows" class="collapse" style="padding-left: 20px;">
+1090: <p style="color: #0c4a00;">Music and Lyrics by Chris Dumigan</p>
+1091: <p>Now the hurt has finally left me, I can look upon it all and smile.<br>
+1092: Oh maybe just a touch of bitter-sweet, but only once in a while.<br>
+1093: You know you really gave me, so many things to look back on.<br>
+1094: So you can't blame me for feeling, just a little withdrawn.<br><br>
+1095: 
+1096: Maybe I'm mad, but I know I can't forget you<br>
+1097: No I just can't seem to get you from my mind.<br>
+1098: Maybe I'm mad, but I know I can't forget you<br>
+1099: But I hope to learn to live with it, in time.<br><br>
+1100: 
+1101: But although I've lost all the sorrow, I still feel an ache inside,<br>
+1102: And my mind keeps playing tricks; I can't say I've not cried.<br>
+1103: For I remember all of your kisses, and the way that you held me tight.<br>
+1104: You know I'd almost forgot how it felt<br>
+1105: before we kissed that first night.<br><br>
+1106: 
+1107: Maybe I'm mad...<br><br>
+1108: 
+1109: You know, everybody, they keep telling me don't look back,<br>
+1110: but look ahead<br>
+1111: Just be glad that you have gained, such experience in time.<br>
+1112: But would I swap all my tomorrows, for a taste of yesterdays?<br>
+1113: Yes I think I'd take the chance again, if I thought that you'd be mine.<br><br>
+1114: 
+1115: Maybe I'm mad...</p>
+1116:   </div>
+1117: </div>
+1118: 
+1119: <div>
+1120:   <a type="button" class="" data-toggle="collapse" data-target="#lonely" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Lonely</a>
+1121:   <div id="lonely" class="collapse" style="padding-left: 20px;">
+1122: <p style="color: #0c4a00;">Lyrics by Robin Kelly<br>Music by Chris Dumigan</p>
+1123: <p>The concrete block looked faintly pink against the evening sky<br>
+1124: And building sites were left alone as cranes stood idly by.<br>
+1125: The city streets seemed strangely calm and I stood wondering why<br><br>
+1126: 
+1127: How lonely are the neon lights which shine until the dawn<br>
+1128: How jaded are the city sights for me<br>
+1129: And there's only  one place in the world I really want to be<br>
+1130: Wherever I can feel your love for me.<br><br>
+1131: 
+1132: And on the hills as shadows grew the winds blew bitter cold<br>
+1133: The farmer made his weary way, his flock left in their fold.<br>
+1134: The same way as his father did and ancestors of old.<br><br>
+1135: 
+1136: How lonely are the mountain streams which flow for evermore<br>
+1137: How empty does the valley seem to me<br>
+1138: And there's only  one place in the world, I really want to be.<br>
+1139: Wherever I can feel your love me.<br><br>
+1140: 
+1141: So sail an ocean liner to some land across the sea<br>
+1142: And fly on little dove to where my love waits patiently<br>
+1143: For I will never feel alone, wherever I may be.</p>
+1144:   </div>
+1145: </div>
+1146: 
+1147: <div>
+1148:   <a type="button" class="" data-toggle="collapse" data-target="#dont" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Don't Tell Me</a>
+1149:   <div id="dont" class="collapse" style="padding-left: 20px;">
+1150: <p style="color: #0c4a00;">Lyrics by Brian Cooper<br>Music Chris Dumigan</p>
+1151: <p>Don't tell me you've found love,<br>
+1152: don't speak those foolish words to me.<br>
+1153: You are blind just at the moment, but one day you will see.<br>
+1154: That your so called love will laugh at you, and twist you like a tree.<br>
+1155: So don't tell me for I've been there and I know.<br><br>
+1156: 
+1157: You know the birds sing so much louder and the night is not as dark.<br>
+1158: And the people seem more friendly as you pass them in the park.<br>
+1159: Hand in hand you walk together and the future's bright and clean.<br>
+1160: Til one day the storm clouds come and lightning smashes through your dreams.<br><br>
+1161: 
+1162: So don't tell me...<br>
+1163: 
+1164: You know that every day is happy, and every night is love.<br>
+1165: You see each weed as a flower, and each pigeon as a dove.<br>
+1166: When the novelty is over, and your feet are on the ground<br>
+1167: Then it begins to turn sour, and your world comes crashing down.<br><br>
+1168: 
+1169: So don't go on about your day-dreams or the paradise you've found.<br>
+1170: Take my advice and get out now 'fore you start getting kicked around.<br>
+1171: You'll be sad and you'll be lonely and the birds won't sing at all.<br>
+1172: But you see the higher that you climb is just the harder that you fall.<br><br>
+1173: 
+1174: So don't tell me...</p>
+1175:   </div>
+1176: </div>
+1177: 
+1178: <div>
+1179:   <a type="button" class="" data-toggle="collapse" data-target="#whispered" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Whispered</a>
+1180:   <div id="whispered" class="collapse" style="padding-left: 20px;">
+1181: <p style="color: #0c4a00;">Lyrics by Chris Fogg<br>Music Chris Dumigan</p>
+1182: <p>Somewhere a lark sings his song to the dawn.<br>
+1183: Sending his notes soaring up to the sun.<br>
+1184: Lost in the thrill of it all<br>
+1185: Answering soft to your call.<br>
+1186: You'll hear me.<br><br>
+1187: 
+1188: It's just a distant sound of love<br>
+1189: Whispered in a single word<br>
+1190: The echo of a voice of love<br>
+1191: Reaching out across the world.<br><br>
+1192: 
+1193: High on a hill where the stream has its source<br>
+1194: Before it plunges down into its course.<br>
+1195: Under the shade of the rock<br>
+1196: High on the wings of the lark.<br>
+1197: I'll find you.<br><br>
+1198: 
+1199: It's just a distant sound of love...<br><br>
+1200: 
+1201: Maybe someday we will see what lies behind.<br>
+1202: And the time will come when we will find.<br><br>
+1203: 
+1204: What lies beyond where the sky meets the hill<br>
+1205: Where we can listen in silence so still.<br>
+1206: Wordlessly passing the hours.<br>
+1207: The time will be no-one's but ours.<br>
+1208: Just listen...</p>
+1209:   </div>
+1210: </div>
+1211: 
+1212: <div>
+1213:   <a type="button" class="" data-toggle="collapse" data-target="#poppies" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Poppies</a>
+1214:   <div id="poppies" class="collapse" style="padding-left: 20px;">
+1215: <p style="color: #0c4a00;">Lyrics by Chris Fogg<br>Music Chris Dumigan</p>
+1216: <p>Trees stand naked on the ridge<br>
+1217: Like a memory of home.<br>
+1218: Like a cross we have to bear<br>
+1219: Like a bridge we have to cross.<br>
+1220: Further into the unknown.<br><br>
+1221: 
+1222: Chase the echoes through the silence,<br>
+1223: Seek out where the poppies grow.<br>
+1224: On the blackthorn past the crow's nest,<br>
+1225: Like a blood stain on the snow.<br><br>
+1226: 
+1227: Ice is glinting in the sun<br>
+1228: And I have to shield my eyes.<br>
+1229: From the patterns on the glass<br>
+1230: From the mirror that will point<br>
+1231: Towards where the future lies.<br><br>
+1232: 
+1233: Dandelions clocks are blowing<br>
+1234: Seeds dispersing in the wind<br>
+1235: By the dead tree stands a scarecrow<br>
+1236: Planting poppies in the spring.</p>
+1237:   </div>
+1238: </div>
+1239: 
+1240: <div>
+1241:   <a type="button" class="" data-toggle="collapse" data-target="#victim" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Another Victim of a Broken Heart</a>
+1242:   <div id="victim" class="collapse" style="padding-left: 20px;">
+1243: <p style="color: #0c4a00;">Lyrics by Anthony Ward<br>Music Chris Dumigan</p>
+1244: <p>I've only just put the phone down, after talking to you.<br>
+1245: What you've just said, has torn my whole world in two.<br><br>
+1246: 
+1247: How can you do this to me?  How can you do this to me?<br>
+1248: I'm falling apart, where did all of this start?<br>
+1249: I'm falling apart, another victim of a broken heart.<br><br>
+1250: 
+1251: I see my face in the mirror,and the tear in my eye.<br>
+1252: I can see your face all around me, as I start to cry.<br><br>
+1253: 
+1254: Oh the lines are still the same, "it's not you it's me."<br>
+1255: how long have you felt like this,from day one maybe?<br><br>
+1256: 
+1257: Tell me is that what you mean to say.<br>
+1258: or are you  just using another cliché?<br><br>
+1259: 
+1260: How can you do this...<br><br>
+1261: 
+1262: What's going to happen to me now, what am I going to do?<br>
+1263: Do have to start all over again, and forget about you?<br>
+1264: (Cause you'll forget about me)<br><br>
+1265: 
+1266: How can you do this...<br>
+1267: another victim, of a broken heart.<br>
+1268: another victim, of a broken heart.</p>
+1269:   </div>
+1270: </div>
+1271: 
+1272: <div>
+1273:   <a type="button" class="" data-toggle="collapse" data-target="#loser" style="font-family: gothic; font-size: 20px; color: #0c4a00;">The Loser</a>
+1274:   <div id="loser" class="collapse" style="padding-left: 20px;">
+1275: <p style="color: #0c4a00;">Lyrics by Ken Sharples<br>Music Chris Dumigan</p>
+1276: <p>She comes to us in rich disguises,<br>
+1277: So we look through her while she recognises.<br>
+1278: And we don't see her as she compromises.<br>
+1279: Walking through doorways of our own devises,<br>
+1280: Missing no chances as she gently takes us by the hand.<br><br>
+1281: 
+1282: Then she might help us with our leave- taking,<br>
+1283: Or maybe help someone who was just faking.<br>
+1284: And perhaps take us just before waking.<br>
+1285: Using strange methods whilst your hand's shaking,<br>
+1286: Yet she works quietly without breaking any rules.<br><br>
+1287: 
+1288: She's older than time yet she's young as you want her,<br>
+1289: Her eyes are like fire and her body like ice.<br>
+1290: You think you can cheat her but you'll be the loser.<br>
+1291: She makes her own rules and she's loaded the dice.<br><br>
+1292: 
+1293: I've seen her and she's a fine woman,<br>
+1294: Seen her standing there or maybe coming,<br>
+1295: And her eyes are smiling like she's having fun.<br>
+1296: And as I look through her I don't see the sun,<br>
+1297: But know this time it's me who's going to follow her back home.<br><br>
+1298: 
+1299: She's older than time...<br><br>
+1300: 
+1301: She comes to us in rich disguises...</p>
+1302:   </div>
+1303: </div>
+1304: 
+1305: <div>
+1306:   <a type="button" class="" data-toggle="collapse" data-target="#afterwards" style="font-family: gothic; font-size: 20px; color: #0c4a00;">Afterwards</a>
+1307:   <div id="afterwards" class="collapse" style="padding-left: 20px;">
+1308: <p style="color: #0c4a00;">Music and Lyrics by Chris Dumigan</p>
+1309: <p>It's over and little remains, just the memories of all we became.<br>
+1310: And I know that I've nothing to gain by acting like this.<br>
+1311: But the friends that I made have all gone.<br>
+1312: And this love that I'm feeling is likely to tear me to bits<br>
+1313: I can't take all this silence.<br><br>
+1314: 
+1315: You don't get to love people that way<br>
+1316: Just to smile when it comes to an end.<br>
+1317: But when we all said on Sunday our tearful goodbyes.<br>
+1318: It was like seeing a part of me die<br>
+1319: watching you break down and cry.<br>
+1320: And I'll never get used to this ache that I'm left with today.<br><br>
+1321: 
+1322: For we started with nothing,<br>
+1323: Almost bit off more than we could chew.<br>
+1324: And we finished with everything,<br>
+1325: Going our way but what's more it's true.<br>
+1326: That I'll never again be the same,<br>
+1327: For I've been through too many changes.<br>
+1328: And this love that I'm feeling inside me will break me in two.<br>
+1329: Will break me in two.<br><br>
+1330: 
+1331: All the laughter the fun and the games<br>
+1332: All the sadness frustrations and pains.<br>
+1333: Were nothing, nothing to what we became when it started to blend.<br>
+1334: Oh I never knew feelings like this,<br>
+1335: I didn't even know that they existed to hurt me this way.<br>
+1336: And to have to say goodbye<br>
+1337: Was the hardest thing I had to say.<br><br>
+1338: 
+1339: For we started with nothing...</p>
+1340:   </div>
+1341: </div>
+1342: 
+1343:   </div>
+1344:  </div>
+1345: </div>
+1346: 
+
+[CSE] Comment number 1:
+[73] Section 508 accessibility checking is off.
+
+[CSE] Comment number 2:
+[73] WCAG 1.0 accessibility checking is off.
+
+[CSE] Comment number 3:
+[73] WCAG 2.0 accessibility checking is off.
+
+[CSE] Comment number 4:
+Accessibility checking is off. This program can help you
+make your web pages more accessible. An accessible page is
+one that more individuals can use, such as individuals who
+are blind or deaf. It can also increase the usefulness of
+your web page for individuals who browse the web using
+slower devices like older computers or wireless devices like
+mobile phones and PDAs. An accessible web site makes good
+business sense (and possibly good legal sense as well) and
+may even improve search engine rankings. You can enable or
+disable accessibility checking in the Validator Engine
+Options.
+
+[CSE] Comment number 5:
+Keyword density: Live (8x - 7.7%), Acoustic (7x - 6.7%),
+Arrangements (7x - 6.7%), Moods (7x - 6.7%), Another (6x -
+5.8%), CD's (5x - 4.8%), Chris (5x - 4.8%), 98 (4x - 3.8%),
+Dumigan (4x - 3.8%), 2 (3x - 2.9%), Place (3x - 2.9%), Time
+(3x - 2.9%), Alternative (2x - 1.9%), Conventional (2x -
+1.9%), Edition (2x - 1.9%), Further (2x - 1.9%), Ghosts (2x
+- 1.9%), Making (2x - 1.9%), Musical (2x - 1.9%), Plugged
+(2x - 1.9%). Remember: Don't write SEO optimized content.
+Write for people, which is what search engines want. List
+limited to first 20 unique words. NOTE: Validation
+terminated so not all words were checked. 0 words excluded.
+
+[CSE] Comment number 6:
+HTML 4.01 Strict document detected.
+
+[CSE] Comment number 7:
+Editing Tip: This document was specified as utf-8 encoded.
+Editing documents with the wrong encoding may cause document
+corruption. Ensure that any editor used to edit a document
+properly supports the document's encoding and properly loads
+it with the correct encoding. CSE HTML Validator's editor
+supports UTF-8 and other common encodings.
+
+[CSE] Comment number 8:
+Use CSS class names that describe the nature of the content
+instead of names that describe the presentation of the
+content. For example, don't use class="red" or class="bold",
+instead use something like class="important".
+
+[CSE] Comment number 9:
+This document is approximately 63015 bytes (this does not
+count any additional downloaded content like images,
+JavaScript, and CSS). Some people may consider this document
+to be too large for mobile access. Consider reducing the
+content and size of this document to increase performance
+and reduce data transfer. This message displays for
+documents over 40,000 bytes.
+
+[CSE] Comment number 10:
+The "style" attribute has been used 6 times. This attribute
+should be used sparingly. If possible, make logical use of
+the "class" attribute instead. Avoiding excessive use of the
+"style" attribute can significantly reduce document size
+while increasing maintainability and improving structure.
+This message is displayed when the "style" attribute is used
+more than 5 times.
+
+[CSE] Comment number 11:
+[133] Mobility Tip #1 - Use flexible designs that respond to
+differences in viewport size; and research, understand, and
+use the viewport meta tag correctly and appropriately.
+
+[CSE] Comment number 12:
+<meta name="description" content="(actual description)">
+should be used in the "head" section to provide a brief
+description of what is contained on this page. Although
+descriptions may not be used directly for rankings, search
+engines may display descriptions in search results, with
+bolding of the relevent keywords. Therefore, a good
+description can help boost click-through rates and thus
+increase traffic to a website. If you're using HTML
+Validator's integrated editor, then this can be added from
+the 'Tags' menu or from the HTML Inserter.
+
+[CSE] Comment number 13:
+Number of "a" links: 22, of which 0 (0.0%) have
+rel="nofollow". Use rel="nofollow" to tell search engines
+not to follow the link and tell Google not to transfer
+PageRank or anchor text across the link. Use rel="nofollow"
+for untrusted content, paid links, and crawl prioritization.
+Visit https://support.google.com/webmasters/answer/96569 for
+more information.
+
+[CSE] Comment number 14:
+[113] Random Search Engine Tip #47 - USE ROBOTS.TXT. Use a
+robots.txt file to block search engines from crawling
+content that they might consider questionable (like
+duplicate or very similar content) and content that you
+don't want crawled.
+
+[CSE] Comment number 15:
+0.05s, 21 errors, 5 warnings, 32 messages, 15 validator
+comments, 1346 lines, 115 elements (with 77 end tags), 1
+document comment, 1 character reference, 104 words spell
+checked (0 in comments).
+
+--------------------------------------------------
+
+--- partial structure because validation terminated ---
+<html> (2)
+| <head> (3)
+| | <meta /> (4)
+| | <title> (5) </title> (5)
+| | <link /> (6)
+| | <script> (7) </script> (7)
+| | <script> (8) </script> (8)
+| | <link /> (9)
+| | <link /> (10)
+| | <style> (12) </style> (53)
+| </head> (55)
+| <body> (57)
+| | <div> (59)
+| | | <div> (61) </div> (61)
+| | | <div> (63)
+| | | | <p> (64)
+| | | | | <a> (64) </a> (64)
+| | | | | <br /> (64)
+| | | | | <a> (65) </a> (65)
+| | | | | <br /> (65)
+| | | | | <a> (66) </a> (66)
+| | | | | <br /> (66)
+| | | | | <a> (67) </a> (67)
+| | | | | <br /> (67)
+| | | | | <a> (68) </a> (68)
+| | | | | <br /> (68)
+| | | | | <a> (69) </a> (69)
+| | | | | <br /> (69)
+| | | | | <a> (70) </a> (70)
+| | | | | <br /> (70)
+| | | | </p> (i)
+| | | | <p> (71)
+| | | | | <b> (71) </b> (71)
+| | | | | <br /> (71)
+| | | | | <span> (72)
+| | | | | | <a> (73) </a> (73)
+| | | | | | <br /> (73)
+| | | | | | <a> (74) </a> (74)
+| | | | | | <br /> (74)
+| | | | | | <a> (75) </a> (75)
+| | | | | </span> (75)
+| | | | </p> (76)
+| | | | <br /> (78)
+| | | | <div> (80)
+| | | | | <br /> (81)
+| | | | | <br /> (82)
+| | | | | <a> (83) </a> (83)
+| | | | | <br /> (83)
+| | | | </div> (84)
+| | | </div> (86)
+| | | <div> (88)
+| | | | <br /> (90)
+| | | | <h1> (92) </h1> (92)
+| | | | <div> (94)
+| | | | | <div> (96)
+| | | | | | <figure> (97)
+| | | | | | | <a> (98)
+| | | | | | | | <img /> (99)
+| | | | | | | </a> (100)
+| | | | | | | <figcaption> (101) </figcaption> (103)
+| | | | | | </figure> (104)
+| | | | | </div> (105)
+| | | | | <div> (107)
+| | | | | | <figure> (108)
+| | | | | | | <a> (109)
+| | | | | | | | <img /> (110)
+| | | | | | | </a> (111)
+| | | | | | | <figcaption> (112) </figcaption> (114)
+| | | | | | </figure> (115)
+| | | | | </div> (116)
+| | | | | <div> (118)
+| | | | | | <figure> (119)
+| | | | | | | <a> (120)
+| | | | | | | | <img /> (121)
+| | | | | | | </a> (122)
+| | | | | | | <figcaption> (123) </figcaption> (125)
+| | | | | | </figure> (126)
+| | | | | </div> (127)
+| | | | | <div> (129)
+| | | | | | <figure> (130)
+| | | | | | | <a> (131)
+| | | | | | | | <img /> (132)
+| | | | | | | </a> (133)
+| | | | | | | <figcaption> (134) </figcaption> (136)
+| | | | | | </figure> (137)
+| | | | | </div> (138)
+| | | | | <div> (140)
+| | | | | | <figure> (141)
+| | | | | | | <a> (142)
+| | | | | | | | <img /> (143)
+| | | | | | | </a> (144)
+| | | | | | | <figcaption> (145) </figcaption> (147)
+| | | | | | </figure> (148)
+| | | | | </div> (149)
+| | | | </div> (151)
+| | | | <h1> (153) </h1> (153)
+| | | | <div> (155)
+| | | | | <div> (157)
+| | | | | | <figure> (158)
+| | | | | | | <a> (159)
+| | | | | | | | <img /> (160)
+| | | | | | | </a> (161)
+| | | | | | | <figcaption> (162) </figcaption> (164)
+| | | | | | </figure> (165)
+| | | | | </div> (166)
+| | | | | <div> (168)
+| | | | | | <figure> (169)
+| | | | | | | <a> (170)
+| | | | | | | | <img /> (171)
+| | | | | | | </a> (172)
+| | | | | | | <figcaption> (173) </figcaption> (175)
+| | | | | | </figure> (176)
+| | | | | </div> (177)
+| | | | | <div> (179)
+| | | | | | <figure> (180)
+| | | | | | | <a> (181)
+| | | | | | | | <img /> (182)
+| | | | | | | </a> (183)
+| | | | | | | <figcaption> (184) </figcaption> (186)
+| | | | | | </figure> (187)
+| | | | | </div> (188)
+| | | | | <div> (190)
+| | | | | | <figure> (191)
+| | | | | | | <a> (192)
+| | | | | | | | <img /> (193)
+| | | | | | | </a> (194)
+| | | | | | | <figcaption> (195)
+| | | | | | | | <br /> (196)
+| | | | | | | </figcaption> (197)
+| | | | | | </figure> (198)
+| | | | | </div> (199)
+| | | | | <div> (201)
+| | | | | | <figure> (202)
+| | | | | | | <a> (203)
+| | | | | | | | <img /> (204)
+| | | | | | | </a> (205)
+| | | | | | | <figcaption> (206)
+| | | | | | | | <br /> (207)
+| | | | | | | </figcaption> (208)
+| | | | | | </figure> (209)
+| | | | | </div> (210)
+| | | | | <div> (212)
+| | | | | | <figure> (213)
+| | | | | | | <a> (214)
+| | | | | | | | <img /> (215)
+| | | | | | | </a> (216)
+| | | | | | | <figcaption> (217)
+| | | | | | | | <br /> (218)
+| | | | | | | </figcaption> (219)
+| | | | | | </figure> (220)
+| | | | | </div> (221)
+| | | | </div> (223)
+| | | | <br /> (225)
+| | | | <br /> (225)
+| | | </div> (227)
+| | | <div> (229) </div> (229)
+| | </div> (231)
+| </body> (233)
+</html> (234)
+---
+<div> (238)
+| <div> (239)
+| | <h1> (240) </h1> (240)
+| | <a /> (241)
+| </div> (i)
+</div> (i)
+--- partial structure because validation terminated ---

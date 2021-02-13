@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chris Dumigan Musical Services - News Test</title>
+	<link rel="stylesheet" type="text/css" href="cd2018styles.css">
+<style>
+.collapsible {
+  background: linear-gradient(150deg, #0a3700, #246019);
+  color: white;
+  cursor: pointer;
+  padding: 4px 4px 3px 4px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+}
+
+.active, .collapsible:hover {
+  background: linear-gradient(150deg, #0e4900, #358b24);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.content {
+  padding: 0;
+  max-height: 0;
+  border-right: solid 1px #0e5300;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<div style="background-color: white;">
+
+<div id="header">Chris Dumigan Musical Services</div>
+
+<div class="links">
+<p><a href="index.html">Home</a><br>
+<a href="news.html">News</a><br>
+<a href="teach.html">Teaching</a><br>
+<a href="comp.html">Composing</a><br>
+<a href="arr.html">Arranging</a><br>
+<a href="trans.html">Transcribing</a><br>
+<a href="perf.html">Performing</a><br>
+<p><b>Shop</b><br>
+<span style="font-size: 15px;">
+<a href="compshop.html">Compositions</a><br>
+<a href="arrshop.html">Arrangements</a><br>
+<a href="cdshop.html">CD's</a></p>
+</span>
+
+<br>
+
+<div style="text-align: right; font-size: 12px; margin-left: 30px;">
+Contact Chris:<br>
+p - 07740 117956<br>
+e - <a href="mailto:c.dumigan@ntlworld.com">c.dumigan@ntlworld.com</a><br>
+</div>
+
+</div>
+
+<div id="content">
+
+<br>
+
+<h1>News</h1>
+
+<br>
+
+<table align="center">
+<tr><td class="date">February 2020</td></tr>
+<tr><td>Chris' "Thomas Hardy Settings" have been published by <a href="http://www.lathkillmusic.co.uk" target="_blank">Lathkill Music</a> under the new title "A Thomas Hardy Suite for Female Voice and Guitar". The complete work will be performed soon by Valerie Hartzell and Tamara McCoy.</td></tr>
+<tr><td>Another recent publication is of Chris' arrangement of "The Cowkeeper's Tune" by Grieg, now available from <a href="https://www.productionsdoz.com/en" target="blank">Les Productions D'Oz</a>.</td></tr>
+<tr><td>
+<ol>
+<li>Saturday 18th April 2020:<br><b>C. Dumigan Solo Recital</b><br>'100 years of guitar arrangements by Chris Dumigan'<br>Tickets £10</li>
+<br><li>Saturday 30th May 2020:<br><b>C. Dumigan and A. McCarthy</b><br>'Music arranged for 2 guitars by Chris Dumigan'<br>Tickets £10</li>
+<br><li>Saturday 6th June 2020:<br><b>Valerie Hartzell and the Cambridge Guitar Orchestra</b><br>Tickets £10</li>
+<br><li>Saturday 11th July 2020:<br><b>Gordon Giltrap</b>
+<ul>
+<li>9.15am  Masterclass - Tickets £25</li>
+<li>Solo Concert - Ticket £15</li>
+</ul>
+</li>
+</ol>
+</td></tr>
+</table>
+
+<br>
+
+<br>
+
+<button type="button" class="collapsible">2018</button>
+<div class="content">
+<table align="center" style="border: solid 1px #0e5300; margin: 0;">
+<tr><td>Watch the video of Duoviceversa performing the fourth and final movement of Chris' Partita for Flute and Guitar <a href="videos/partita4.mp4" target="_blank">here</a>. This performance comes from Ottawa in 2014.</td></tr>
+<tr><td>Following their performance of Pastorale and Dance for flute, viola and guitar at the Kirchentag in Stuttgart on June 6th, TrioConBrio requested that Chris write a new piece that could precede it. The new work, Aubade, links directly to the Pastorale and shares some of its melodic material, although in a varied manner. It is expected that soon the TrioConBrio will premiere the piece in its new 3 movement guise.</td></tr>
+<tr><td>Chris has added two new <a href="comp.html">compositions</a> to his portfolio, <i>Dance - Rondo</i> and <i>Celtic Elegy</i>, both for four guitars. Also, his list of <a href="arr.html">arrangements</a> for two guitars grows ever longer with the addition of more of Grieg's Lyric Pieces, Op. 38, 43, 47 and 54.</td></tr>
+</table>
+</div>
+
+<br>
+
+<h2>Collapsibles</h2>
+
+<p>A Collapsible:</p>
+<button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
